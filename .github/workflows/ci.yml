@@ -1,0 +1,49 @@
+name: ci
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    name: Validate, build artifacts, and smoke-test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      # Core runtime is stdlib-only; no dependency install step is required.
+
+      - name: Lint all skills
+        run: python tools/lint-skills.py --all
+
+      - name: Verify index.json is current
+        run: python tools/build-index.py --check
+
+      - name: Verify ATT&CK Navigator layer is current
+        run: python tools/build-navigator-layer.py --check
+
+      - name: Verify CATALOG.md is current
+        run: python tools/build-catalog.py --check
+
+      - name: Byte-compile every skill script
+        run: |
+          python -m compileall -q skills tools
+
+      - name: Smoke-test all skill scripts
+        run: python tools/smoke-test.py
+
+      - name: Smoke-test the analyst-pack CLI
+        run: |
+          python tools/analyst-pack.py stats
+          python tools/analyst-pack.py list

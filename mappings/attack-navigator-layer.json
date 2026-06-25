@@ -1,0 +1,1358 @@
+{
+  "name": "AnalystAIPack Coverage",
+  "versions": {
+    "attack": "15",
+    "navigator": "5.1.0",
+    "layer": "4.5"
+  },
+  "domain": "enterprise-attack",
+  "description": "ATT&CK technique coverage across the AnalystAIPack skill library. Technique score = number of skills that reference the technique.",
+  "techniques": [
+    {
+      "techniqueID": "T1003",
+      "score": 3,
+      "comment": "AnalystAIPack skills: analyzing-malware-in-memory-with-volatility3, hunting-credential-dumping-activity, validating-detections-with-atomic-tests",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "skills",
+          "value": "3"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1003.001",
+      "score": 1,
+      "comment": "AnalystAIPack skills: hunting-credential-dumping-activity",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "skills",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1003.002",
+      "score": 1,
+      "comment": "AnalystAIPack skills: hunting-credential-dumping-activity",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "skills",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1003.006",
+      "score": 1,
+      "comment": "AnalystAIPack skills: hunting-active-directory-attacks",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "skills",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1005",
+      "score": 1,
+      "comment": "AnalystAIPack skills: analyzing-infostealer-credential-theft",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "skills",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1014",
+      "score": 2,
+      "comment": "AnalystAIPack skills: analyzing-windows-driver-malware, dissecting-boot-and-kernel-rootkits",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "skills",
+          "value": "2"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1021.002",
+      "score": 1,
+      "comment": "AnalystAIPack skills: hunting-lateral-movement-over-smb-and-wmi",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "skills",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1021.003",
+      "score": 1,
+      "comment": "AnalystAIPack skills: hunting-lateral-movement-over-smb-and-wmi",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "skills",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1027",
+      "score": 52,
+      "comment": "AnalystAIPack skills: analyzing-api-call-traces, analyzing-compiled-python-malware, analyzing-cryptominer-malware, analyzing-dotnet-malware-internals, analyzing-elf-binaries-on-linux, analyzing-excel-4-macro-malware, analyzing-golang-malware-internals, analyzing-java-jar-malware, analyzing-mach-o-binaries-on-macos, analyzing-malicious-iso-and-container-files, analyzing-malicious-pdfs, analyzing-malicious-vbscript-and-wsf, analyzing-pe-imports-and-exports, analyzing-position-independent-code, analyzing-ransomware-encryption-behavior, analyzing-rich-header-and-compiler-artifacts, analyzing-rust-malware-internals, analyzing-webshells, automating-analysis-with-r2pipe, building-config-extractors, debugging-malware-with-x64dbg, decrypting-embedded-configuration, defeating-control-flow-flattening, defeating-string-and-api-obfuscation, deobfuscating-malicious-javascript, deobfuscating-malicious-powershell, diffing-malware-samples-to-find-changes, emulating-shellcode-with-unicorn, extracting-and-classifying-strings, extracting-cobalt-strike-beacon-config, extracting-config-from-a-running-sample, extracting-encryption-keys-from-binaries, generating-capability-reports-with-capa, handling-malware-samples-safely, hashing-and-fingerprinting-files, hunting-suspicious-powershell-execution, identifying-anti-debugging-techniques, identifying-cryptographic-routines-in-binaries, measuring-section-entropy-to-detect-packing, performing-static-pe-analysis, recovering-injected-code-and-shellcode, reverse-engineering-arm-binaries, reverse-engineering-binaries-with-binary-ninja, reverse-engineering-binaries-with-ghidra, reverse-engineering-binaries-with-radare2-rizin, reverse-engineering-nim-and-other-exotic-binaries, reverse-engineering-shellcode, scanning-samples-with-yara, scripting-ghidra-headless-analysis, scripting-ida-with-idapython, solving-malware-with-symbolic-execution, triaging-an-unknown-sample",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "skills",
+          "value": "52"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1027.001",
+      "score": 1,
+      "comment": "AnalystAIPack skills: writing-yara-rules-from-reversed-code",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "skills",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1027.002",
+      "score": 4,
+      "comment": "AnalystAIPack skills: dumping-and-rebuilding-a-pe-from-memory, manually-unpacking-a-packed-binary, measuring-section-entropy-to-detect-packing, unpacking-upx-and-common-packers",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "skills",
+          "value": "4"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1027.006",
+      "score": 1,
+      "comment": "AnalystAIPack skills: analyzing-malicious-onenote-and-html-smuggling",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "skills",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1027.007",
+      "score": 2,
+      "comment": "AnalystAIPack skills: analyzing-position-independent-code, resolving-dynamic-api-hashing",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "skills",
+          "value": "2"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1027.013",
+      "score": 1,
+      "comment": "AnalystAIPack skills: defeating-control-flow-flattening",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "skills",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1036",
+      "score": 2,
+      "comment": "AnalystAIPack skills: analyzing-rich-header-and-compiler-artifacts, identifying-file-types-and-formats",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "skills",
+          "value": "2"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1036.001",
+      "score": 1,
+      "comment": "AnalystAIPack skills: analyzing-authenticode-signatures",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "skills",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1036.008",
+      "score": 1,
+      "comment": "AnalystAIPack skills: identifying-file-types-and-formats",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "skills",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1041",
+      "score": 1,
+      "comment": "AnalystAIPack skills: pivoting-on-iocs-across-data-sources",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "skills",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1047",
+      "score": 2,
+      "comment": "AnalystAIPack skills: hunting-wmi-event-subscription-persistence, mapping-hunts-to-mitre-attack",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "skills",
+          "value": "2"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1048",
+      "score": 1,
+      "comment": "AnalystAIPack skills: hunting-unusual-outbound-connections",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "skills",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1048.003",
+      "score": 1,
+      "comment": "AnalystAIPack skills: hunting-dns-tunneling-and-exfiltration",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "skills",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1049",
+      "score": 1,
+      "comment": "AnalystAIPack skills: collecting-volatile-evidence-from-a-suspect-host",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "skills",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1053",
+      "score": 4,
+      "comment": "AnalystAIPack skills: hunting-scheduled-task-abuse, operationalizing-a-hunt-into-a-detection, tuning-detections-to-reduce-false-positives, validating-detections-with-atomic-tests",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "skills",
+          "value": "4"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1053.003",
+      "score": 1,
+      "comment": "AnalystAIPack skills: hunting-persistence-on-linux",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "skills",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1053.005",
+      "score": 2,
+      "comment": "AnalystAIPack skills: hunting-persistence-mechanisms-on-windows, hunting-scheduled-task-abuse",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "skills",
+          "value": "2"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1055",
+      "score": 10,
+      "comment": "AnalystAIPack skills: analyzing-api-call-traces, analyzing-dotnet-malware-internals, analyzing-malware-in-memory-with-volatility3, debugging-malware-with-x64dbg, detecting-process-injection-in-memory, emulating-shellcode-with-unicorn, hunting-process-injection-with-sysmon, performing-dynamic-analysis-in-a-sandbox, recovering-injected-code-and-shellcode, reverse-engineering-shellcode",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "skills",
+          "value": "10"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1055.001",
+      "score": 2,
+      "comment": "AnalystAIPack skills: detecting-process-injection-in-memory, hunting-process-injection-with-sysmon",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "skills",
+          "value": "2"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1055.012",
+      "score": 3,
+      "comment": "AnalystAIPack skills: detecting-process-injection-in-memory, dumping-and-rebuilding-a-pe-from-memory, hunting-process-injection-with-sysmon",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "skills",
+          "value": "3"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1056",
+      "score": 1,
+      "comment": "AnalystAIPack skills: analyzing-malware-in-memory-with-volatility3",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "skills",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1056.001",
+      "score": 1,
+      "comment": "AnalystAIPack skills: analyzing-banking-trojan-webinjects",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "skills",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1057",
+      "score": 2,
+      "comment": "AnalystAIPack skills: analyzing-malware-in-memory-with-volatility3, collecting-volatile-evidence-from-a-suspect-host",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "skills",
+          "value": "2"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1059",
+      "score": 25,
+      "comment": "AnalystAIPack skills: analyzing-android-dex-malware, analyzing-golang-malware-internals, analyzing-java-jar-malware, analyzing-rust-malware-internals, analyzing-webshells, automating-analysis-with-r2pipe, building-a-threat-hunt-hypothesis, establishing-telemetry-baselines, generating-capability-reports-with-capa, hunting-from-a-threat-intel-report, hunting-lolbin-abuse-on-windows, hunting-scheduled-task-abuse, hunting-wmi-event-subscription-persistence, mapping-hunts-to-mitre-attack, monitoring-process-and-file-behavior, operationalizing-a-hunt-into-a-detection, profiling-a-threat-actor-from-ttps, reverse-engineering-arm-binaries, reverse-engineering-binaries-with-binary-ninja, reverse-engineering-binaries-with-radare2-rizin, reverse-engineering-nim-and-other-exotic-binaries, scripting-ghidra-headless-analysis, scripting-ida-with-idapython, tuning-detections-to-reduce-false-positives, validating-detections-with-atomic-tests",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "skills",
+          "value": "25"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1059.001",
+      "score": 5,
+      "comment": "AnalystAIPack skills: analyzing-malicious-lnk-files, deobfuscating-malicious-powershell, hunting-fileless-and-in-memory-threats, hunting-suspicious-powershell-execution, writing-sigma-detection-rules",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "skills",
+          "value": "5"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1059.002",
+      "score": 1,
+      "comment": "AnalystAIPack skills: analyzing-mach-o-binaries-on-macos",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "skills",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1059.003",
+      "score": 2,
+      "comment": "AnalystAIPack skills: analyzing-malicious-lnk-files, analyzing-malicious-vbscript-and-wsf",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "skills",
+          "value": "2"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1059.004",
+      "score": 1,
+      "comment": "AnalystAIPack skills: analyzing-elf-binaries-on-linux",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "skills",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1059.005",
+      "score": 3,
+      "comment": "AnalystAIPack skills: analyzing-excel-4-macro-malware, analyzing-malicious-office-macros, analyzing-malicious-vbscript-and-wsf",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "skills",
+          "value": "3"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1059.006",
+      "score": 1,
+      "comment": "AnalystAIPack skills: analyzing-compiled-python-malware",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "skills",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1059.007",
+      "score": 2,
+      "comment": "AnalystAIPack skills: analyzing-malicious-pdfs, deobfuscating-malicious-javascript",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "skills",
+          "value": "2"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1068",
+      "score": 1,
+      "comment": "AnalystAIPack skills: analyzing-windows-driver-malware",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "skills",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1071",
+      "score": 22,
+      "comment": "AnalystAIPack skills: analyzing-rat-command-and-control, building-a-threat-hunt-hypothesis, building-config-extractors, building-zeek-analytics-for-hunting, decrypting-embedded-configuration, defanging-and-sharing-iocs, enriching-iocs-with-threat-intel-sources, establishing-telemetry-baselines, extracting-config-from-a-running-sample, extracting-iocs-from-analysis-output, hunting-c2-beaconing-with-frequency-analysis, hunting-from-a-threat-intel-report, hunting-unusual-outbound-connections, mapping-hunts-to-mitre-attack, operationalizing-a-hunt-into-a-detection, performing-dynamic-analysis-in-a-sandbox, pivoting-on-iocs-across-data-sources, profiling-a-threat-actor-from-ttps, reverse-engineering-custom-c2-protocols, scoping-an-incident-from-a-single-indicator, tracking-adversary-infrastructure, tuning-detections-to-reduce-false-positives",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "skills",
+          "value": "22"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1071.001",
+      "score": 6,
+      "comment": "AnalystAIPack skills: capturing-and-analyzing-malware-network-traffic, extracting-cobalt-strike-beacon-config, hunting-c2-beaconing-with-frequency-analysis, hunting-cobalt-strike-traffic, hunting-domain-fronting-and-cdn-abuse, writing-suricata-and-snort-rules",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "skills",
+          "value": "6"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1071.004",
+      "score": 2,
+      "comment": "AnalystAIPack skills: capturing-and-analyzing-malware-network-traffic, hunting-dns-tunneling-and-exfiltration",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "skills",
+          "value": "2"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1074.001",
+      "score": 1,
+      "comment": "AnalystAIPack skills: hunting-data-staging-and-archiving",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "skills",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1078",
+      "score": 2,
+      "comment": "AnalystAIPack skills: hunting-anomalous-authentication-patterns, scoping-an-incident-from-a-single-indicator",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "skills",
+          "value": "2"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1083",
+      "score": 1,
+      "comment": "AnalystAIPack skills: analyzing-ransomware-encryption-behavior",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "skills",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1090",
+      "score": 2,
+      "comment": "AnalystAIPack skills: extracting-cobalt-strike-beacon-config, hunting-cobalt-strike-traffic",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "skills",
+          "value": "2"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1090.004",
+      "score": 1,
+      "comment": "AnalystAIPack skills: hunting-domain-fronting-and-cdn-abuse",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "skills",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1095",
+      "score": 4,
+      "comment": "AnalystAIPack skills: building-zeek-analytics-for-hunting, capturing-and-analyzing-malware-network-traffic, reverse-engineering-custom-c2-protocols, writing-suricata-and-snort-rules",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "skills",
+          "value": "4"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1098.004",
+      "score": 1,
+      "comment": "AnalystAIPack skills: hunting-persistence-on-linux",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "skills",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1105",
+      "score": 4,
+      "comment": "AnalystAIPack skills: analyzing-loaders-and-droppers, analyzing-rat-command-and-control, hunting-lolbin-abuse-on-windows, pivoting-on-iocs-across-data-sources",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "skills",
+          "value": "4"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1106",
+      "score": 7,
+      "comment": "AnalystAIPack skills: analyzing-api-call-traces, analyzing-pe-imports-and-exports, defeating-string-and-api-obfuscation, generating-capability-reports-with-capa, monitoring-process-and-file-behavior, resolving-dynamic-api-hashing, reverse-engineering-shellcode",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "skills",
+          "value": "7"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1110",
+      "score": 1,
+      "comment": "AnalystAIPack skills: hunting-anomalous-authentication-patterns",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "skills",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1110.003",
+      "score": 1,
+      "comment": "AnalystAIPack skills: hunting-anomalous-authentication-patterns",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "skills",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1112",
+      "score": 2,
+      "comment": "AnalystAIPack skills: hunting-fileless-and-in-memory-threats, monitoring-process-and-file-behavior",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "skills",
+          "value": "2"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1129",
+      "score": 2,
+      "comment": "AnalystAIPack skills: analyzing-elf-binaries-on-linux, performing-static-pe-analysis",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "skills",
+          "value": "2"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1140",
+      "score": 16,
+      "comment": "AnalystAIPack skills: analyzing-loaders-and-droppers, building-config-extractors, debugging-malware-with-x64dbg, decrypting-embedded-configuration, defeating-control-flow-flattening, defeating-string-and-api-obfuscation, deobfuscating-malicious-javascript, deobfuscating-malicious-powershell, extracting-config-from-a-running-sample, manually-unpacking-a-packed-binary, performing-static-pe-analysis, resolving-dynamic-api-hashing, reverse-engineering-binaries-with-ghidra, solving-malware-with-symbolic-execution, triaging-an-unknown-sample, unpacking-upx-and-common-packers",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "skills",
+          "value": "16"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1185",
+      "score": 1,
+      "comment": "AnalystAIPack skills: analyzing-banking-trojan-webinjects",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "skills",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1204",
+      "score": 1,
+      "comment": "AnalystAIPack skills: establishing-telemetry-baselines",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "skills",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1204.002",
+      "score": 6,
+      "comment": "AnalystAIPack skills: analyzing-excel-4-macro-malware, analyzing-malicious-iso-and-container-files, analyzing-malicious-lnk-files, analyzing-malicious-office-macros, analyzing-malicious-onenote-and-html-smuggling, analyzing-malicious-pdfs",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "skills",
+          "value": "6"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1207",
+      "score": 1,
+      "comment": "AnalystAIPack skills: hunting-active-directory-attacks",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "skills",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1218",
+      "score": 1,
+      "comment": "AnalystAIPack skills: hunting-lolbin-abuse-on-windows",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "skills",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1219",
+      "score": 1,
+      "comment": "AnalystAIPack skills: analyzing-rat-command-and-control",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "skills",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1406",
+      "score": 1,
+      "comment": "AnalystAIPack skills: analyzing-android-dex-malware",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "skills",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1480",
+      "score": 3,
+      "comment": "AnalystAIPack skills: reverse-engineering-binaries-with-ghidra, solving-malware-with-symbolic-execution, unpacking-upx-and-common-packers",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "skills",
+          "value": "3"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1485",
+      "score": 1,
+      "comment": "AnalystAIPack skills: analyzing-wiper-malware",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "skills",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1486",
+      "score": 4,
+      "comment": "AnalystAIPack skills: analyzing-ransomware-encryption-behavior, extracting-encryption-keys-from-binaries, hunting-ransomware-precursor-behavior, identifying-cryptographic-routines-in-binaries",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "skills",
+          "value": "4"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1489",
+      "score": 1,
+      "comment": "AnalystAIPack skills: hunting-ransomware-precursor-behavior",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "skills",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1490",
+      "score": 2,
+      "comment": "AnalystAIPack skills: analyzing-ransomware-encryption-behavior, hunting-ransomware-precursor-behavior",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "skills",
+          "value": "2"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1496",
+      "score": 1,
+      "comment": "AnalystAIPack skills: analyzing-cryptominer-malware",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "skills",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1497",
+      "score": 5,
+      "comment": "AnalystAIPack skills: bypassing-anti-vm-and-sandbox-checks, debugging-malware-with-x64dbg, detecting-sandbox-evasion-behavior, performing-dynamic-analysis-in-a-sandbox, setting-up-an-isolated-malware-analysis-lab",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "skills",
+          "value": "5"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1497.001",
+      "score": 3,
+      "comment": "AnalystAIPack skills: bypassing-anti-vm-and-sandbox-checks, detecting-sandbox-evasion-behavior, identifying-anti-debugging-techniques",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "skills",
+          "value": "3"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1497.003",
+      "score": 1,
+      "comment": "AnalystAIPack skills: bypassing-anti-vm-and-sandbox-checks",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "skills",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1505.003",
+      "score": 1,
+      "comment": "AnalystAIPack skills: analyzing-webshells",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "skills",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1539",
+      "score": 1,
+      "comment": "AnalystAIPack skills: analyzing-infostealer-credential-theft",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "skills",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1542.003",
+      "score": 1,
+      "comment": "AnalystAIPack skills: dissecting-boot-and-kernel-rootkits",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "skills",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1543",
+      "score": 1,
+      "comment": "AnalystAIPack skills: analyzing-cryptominer-malware",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "skills",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1543.002",
+      "score": 1,
+      "comment": "AnalystAIPack skills: hunting-persistence-on-linux",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "skills",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1543.003",
+      "score": 1,
+      "comment": "AnalystAIPack skills: hunting-persistence-mechanisms-on-windows",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "skills",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1546.003",
+      "score": 2,
+      "comment": "AnalystAIPack skills: hunting-persistence-mechanisms-on-windows, hunting-wmi-event-subscription-persistence",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "skills",
+          "value": "2"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1547",
+      "score": 2,
+      "comment": "AnalystAIPack skills: hunting-from-a-threat-intel-report, performing-dynamic-analysis-in-a-sandbox",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "skills",
+          "value": "2"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1547.001",
+      "score": 2,
+      "comment": "AnalystAIPack skills: hunting-persistence-mechanisms-on-windows, writing-sigma-detection-rules",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "skills",
+          "value": "2"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1547.006",
+      "score": 2,
+      "comment": "AnalystAIPack skills: analyzing-windows-driver-malware, dissecting-boot-and-kernel-rootkits",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "skills",
+          "value": "2"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1550.003",
+      "score": 1,
+      "comment": "AnalystAIPack skills: hunting-kerberoasting-and-ticket-attacks",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "skills",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1553.002",
+      "score": 1,
+      "comment": "AnalystAIPack skills: analyzing-authenticode-signatures",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "skills",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1553.005",
+      "score": 1,
+      "comment": "AnalystAIPack skills: analyzing-malicious-iso-and-container-files",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "skills",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1555.003",
+      "score": 1,
+      "comment": "AnalystAIPack skills: analyzing-infostealer-credential-theft",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "skills",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1557",
+      "score": 1,
+      "comment": "AnalystAIPack skills: analyzing-banking-trojan-webinjects",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "skills",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1558",
+      "score": 1,
+      "comment": "AnalystAIPack skills: hunting-kerberoasting-and-ticket-attacks",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "skills",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1558.001",
+      "score": 1,
+      "comment": "AnalystAIPack skills: hunting-active-directory-attacks",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "skills",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1558.003",
+      "score": 1,
+      "comment": "AnalystAIPack skills: hunting-kerberoasting-and-ticket-attacks",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "skills",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1560",
+      "score": 1,
+      "comment": "AnalystAIPack skills: hunting-data-staging-and-archiving",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "skills",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1560.001",
+      "score": 1,
+      "comment": "AnalystAIPack skills: hunting-data-staging-and-archiving",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "skills",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1561.001",
+      "score": 1,
+      "comment": "AnalystAIPack skills: analyzing-wiper-malware",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "skills",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1561.002",
+      "score": 1,
+      "comment": "AnalystAIPack skills: analyzing-wiper-malware",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "skills",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1562.001",
+      "score": 1,
+      "comment": "AnalystAIPack skills: hunting-suspicious-powershell-execution",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "skills",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1564",
+      "score": 1,
+      "comment": "AnalystAIPack skills: setting-up-an-isolated-malware-analysis-lab",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "skills",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1566.001",
+      "score": 2,
+      "comment": "AnalystAIPack skills: analyzing-malicious-office-macros, analyzing-malicious-onenote-and-html-smuggling",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "skills",
+          "value": "2"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1570",
+      "score": 1,
+      "comment": "AnalystAIPack skills: hunting-lateral-movement-over-smb-and-wmi",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "skills",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1571",
+      "score": 4,
+      "comment": "AnalystAIPack skills: building-zeek-analytics-for-hunting, capturing-and-analyzing-malware-network-traffic, hunting-unusual-outbound-connections, writing-suricata-and-snort-rules",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "skills",
+          "value": "4"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1572",
+      "score": 1,
+      "comment": "AnalystAIPack skills: hunting-dns-tunneling-and-exfiltration",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "skills",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1573",
+      "score": 7,
+      "comment": "AnalystAIPack skills: extracting-cobalt-strike-beacon-config, extracting-encryption-keys-from-binaries, hunting-c2-beaconing-with-frequency-analysis, hunting-cobalt-strike-traffic, hunting-domain-fronting-and-cdn-abuse, identifying-cryptographic-routines-in-binaries, reverse-engineering-custom-c2-protocols",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "skills",
+          "value": "7"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1574",
+      "score": 1,
+      "comment": "AnalystAIPack skills: analyzing-loaders-and-droppers",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "skills",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1577",
+      "score": 1,
+      "comment": "AnalystAIPack skills: analyzing-android-dex-malware",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "skills",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1583",
+      "score": 4,
+      "comment": "AnalystAIPack skills: enriching-iocs-with-threat-intel-sources, extracting-iocs-from-analysis-output, profiling-a-threat-actor-from-ttps, tracking-adversary-infrastructure",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "skills",
+          "value": "4"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1583.001",
+      "score": 1,
+      "comment": "AnalystAIPack skills: tracking-adversary-infrastructure",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "skills",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1587",
+      "score": 2,
+      "comment": "AnalystAIPack skills: building-a-sample-management-workflow, writing-a-malware-analysis-report",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "skills",
+          "value": "2"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1587.001",
+      "score": 13,
+      "comment": "AnalystAIPack skills: analyzing-compiled-python-malware, analyzing-golang-malware-internals, analyzing-rich-header-and-compiler-artifacts, analyzing-rust-malware-internals, automating-analysis-with-r2pipe, diffing-malware-samples-to-find-changes, reverse-engineering-arm-binaries, reverse-engineering-binaries-with-binary-ninja, reverse-engineering-binaries-with-radare2-rizin, reverse-engineering-nim-and-other-exotic-binaries, scanning-samples-with-yara, scripting-ghidra-headless-analysis, writing-yara-rules-from-reversed-code",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "skills",
+          "value": "13"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1588.001",
+      "score": 1,
+      "comment": "AnalystAIPack skills: diffing-malware-samples-to-find-changes",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "skills",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1620",
+      "score": 9,
+      "comment": "AnalystAIPack skills: analyzing-dotnet-malware-internals, analyzing-java-jar-malware, analyzing-position-independent-code, dumping-and-rebuilding-a-pe-from-memory, emulating-shellcode-with-unicorn, hunting-fileless-and-in-memory-threats, manually-unpacking-a-packed-binary, recovering-injected-code-and-shellcode, scripting-ida-with-idapython",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "skills",
+          "value": "9"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1622",
+      "score": 2,
+      "comment": "AnalystAIPack skills: detecting-sandbox-evasion-behavior, identifying-anti-debugging-techniques",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "skills",
+          "value": "2"
+        }
+      ]
+    }
+  ],
+  "gradient": {
+    "colors": [
+      "#f2f5fa",
+      "#66b1ff",
+      "#0d4a9e"
+    ],
+    "minValue": 0,
+    "maxValue": 52
+  },
+  "legendItems": [],
+  "showTacticRowBackground": true,
+  "tacticRowBackground": "#205b8f",
+  "selectTechniquesAcrossTactics": true,
+  "selectSubtechniquesWithParent": false
+}

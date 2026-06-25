@@ -1,0 +1,2271 @@
+{
+  "name": "analyst-ai-pack",
+  "version": "0.1.0",
+  "generated_at": "2026-06-23T16:19:10Z",
+  "domain": "cybersecurity",
+  "total_skills": 118,
+  "skills_by_subdomain": {
+    "lab-foundations": 12,
+    "malware-analysis": 38,
+    "reverse-engineering": 35,
+    "threat-hunting": 33
+  },
+  "skills": [
+    {
+      "name": "analyzing-android-dex-malware",
+      "description": "Reverses Android malware: unpacking APKs, decompiling DEX bytecode to readable Java, auditing the manifest for abused permissions and components, and locating dynamically loaded or native payloads. Activates for requests to analyze an APK, decompile DEX, or investigate a suspicious Android app.",
+      "domain": "cybersecurity",
+      "subdomain": "reverse-engineering",
+      "tags": [
+        "reverse-engineering",
+        "android",
+        "dex",
+        "apk",
+        "mobile",
+        "decompilation"
+      ],
+      "mitre_attack": [
+        "T1059",
+        "T1406",
+        "T1577"
+      ],
+      "path": "skills/analyzing-android-dex-malware"
+    },
+    {
+      "name": "analyzing-api-call-traces",
+      "description": "Analyzes API call traces from a sandbox or API monitor (JSON) to group calls by category, reconstruct high-level behaviors (process injection, file drops, network, crypto), and flag suspicious call sequences. Activates for requests to analyze an API trace, interpret sandbox API logs, or identify behavior from Win32/Native API calls.",
+      "domain": "cybersecurity",
+      "subdomain": "malware-analysis",
+      "tags": [
+        "malware-analysis",
+        "dynamic-analysis",
+        "api-trace",
+        "winapi",
+        "sandbox"
+      ],
+      "mitre_attack": [
+        "T1106",
+        "T1055",
+        "T1027"
+      ],
+      "path": "skills/analyzing-api-call-traces"
+    },
+    {
+      "name": "analyzing-authenticode-signatures",
+      "description": "Analyzes Windows Authenticode signatures on PE files: checking for a signature, reading the signer certificate chain, detecting revoked/expired/stolen certs, and recognizing signature-stripping and catalog-signing abuse. Activates for requests to analyze a code signature, verify Authenticode, or assess signer trust on a PE.",
+      "domain": "cybersecurity",
+      "subdomain": "malware-analysis",
+      "tags": [
+        "malware-analysis",
+        "authenticode",
+        "code-signing",
+        "pe",
+        "certificates"
+      ],
+      "mitre_attack": [
+        "T1553.002",
+        "T1036.001"
+      ],
+      "path": "skills/analyzing-authenticode-signatures"
+    },
+    {
+      "name": "analyzing-banking-trojan-webinjects",
+      "description": "Analyzes banking trojan webinject configurations to extract targeted institutions, injected JavaScript/HTML, and data-theft hooks, mapping the fraud workflow. Activates for requests to analyze banking trojan webinjects, parse a webinject config, or map targeted banks and credential-theft injections.",
+      "domain": "cybersecurity",
+      "subdomain": "malware-analysis",
+      "tags": [
+        "malware-analysis",
+        "banking-trojan",
+        "webinject",
+        "fraud",
+        "credential-theft"
+      ],
+      "mitre_attack": [
+        "T1185",
+        "T1557",
+        "T1056.001"
+      ],
+      "path": "skills/analyzing-banking-trojan-webinjects"
+    },
+    {
+      "name": "analyzing-compiled-python-malware",
+      "description": "Analyzes Python-based malware packaged as PyInstaller/py2exe executables by detecting the packer, locating the embedded archive, and identifying bundled .pyc modules for extraction and decompilation. Activates for requests to analyze compiled Python malware, unpack a PyInstaller binary, or extract pyc modules from a frozen Python executable.",
+      "domain": "cybersecurity",
+      "subdomain": "reverse-engineering",
+      "tags": [
+        "reverse-engineering",
+        "python",
+        "pyinstaller",
+        "pyc",
+        "unpacking"
+      ],
+      "mitre_attack": [
+        "T1027",
+        "T1059.006",
+        "T1587.001"
+      ],
+      "path": "skills/analyzing-compiled-python-malware"
+    },
+    {
+      "name": "analyzing-cryptominer-malware",
+      "description": "Analyzes cryptojacking/coinminer malware by extracting mining pool endpoints (stratum), wallet addresses, algorithm and miner identifiers (XMRig and forks), and persistence or resource-control settings from static strings and config. Activates for requests to analyze a cryptominer, extract mining pool and wallet IOCs, or identify coinminer configuration.",
+      "domain": "cybersecurity",
+      "subdomain": "malware-analysis",
+      "tags": [
+        "malware-analysis",
+        "cryptominer",
+        "cryptojacking",
+        "xmrig",
+        "resource-hijacking"
+      ],
+      "mitre_attack": [
+        "T1496",
+        "T1543",
+        "T1027"
+      ],
+      "path": "skills/analyzing-cryptominer-malware"
+    },
+    {
+      "name": "analyzing-dotnet-malware-internals",
+      "description": "Reverses .NET/managed malware: decompiling MSIL back to C#, defeating common .NET protectors and string encryptors, and tracing reflection-based loaders to recover the real payload. Activates for requests to analyze a .NET sample, decompile MSIL, or unpack a managed loader.",
+      "domain": "cybersecurity",
+      "subdomain": "reverse-engineering",
+      "tags": [
+        "reverse-engineering",
+        "dotnet",
+        "msil",
+        "decompilation",
+        "deobfuscation",
+        "managed-code"
+      ],
+      "mitre_attack": [
+        "T1027",
+        "T1620",
+        "T1055"
+      ],
+      "path": "skills/analyzing-dotnet-malware-internals"
+    },
+    {
+      "name": "analyzing-elf-binaries-on-linux",
+      "description": "Statically analyzes Linux ELF malware: ELF header and sections, dynamic symbols and imports, segment permissions, embedded strings, and packing indicators to infer capability without execution. Activates for requests to analyze an ELF binary, Linux malware, or shared object.",
+      "domain": "cybersecurity",
+      "subdomain": "malware-analysis",
+      "tags": [
+        "malware",
+        "static-analysis",
+        "elf",
+        "linux",
+        "symbols",
+        "entropy"
+      ],
+      "mitre_attack": [
+        "T1027",
+        "T1059.004",
+        "T1129"
+      ],
+      "path": "skills/analyzing-elf-binaries-on-linux"
+    },
+    {
+      "name": "analyzing-excel-4-macro-malware",
+      "description": "Analyzes legacy Excel 4.0 (XLM) macro malware by parsing extracted macro-sheet formulas for auto-executing names, obfuscation (FORMULA.FILL, CHAR concatenation), and download or execution primitives (EXEC, CALL, REGISTER). Activates for requests to analyze XLM macros, examine Excel 4.0 macro sheets, or deobfuscate legacy spreadsheet macros.",
+      "domain": "cybersecurity",
+      "subdomain": "malware-analysis",
+      "tags": [
+        "malware-analysis",
+        "xlm",
+        "excel4",
+        "macros",
+        "document-malware"
+      ],
+      "mitre_attack": [
+        "T1059.005",
+        "T1204.002",
+        "T1027"
+      ],
+      "path": "skills/analyzing-excel-4-macro-malware"
+    },
+    {
+      "name": "analyzing-golang-malware-internals",
+      "description": "Analyzes Go-compiled malware by recovering function names from the pclntab, detecting the Go build/version string, and listing embedded package paths to overcome stripped symbols. Activates for requests to analyze Go malware, recover Go function names, or identify a Golang binary build.",
+      "domain": "cybersecurity",
+      "subdomain": "reverse-engineering",
+      "tags": [
+        "reverse-engineering",
+        "golang",
+        "symbol-recovery",
+        "pclntab",
+        "stripped-binaries"
+      ],
+      "mitre_attack": [
+        "T1027",
+        "T1587.001",
+        "T1059"
+      ],
+      "path": "skills/analyzing-golang-malware-internals"
+    },
+    {
+      "name": "analyzing-infostealer-credential-theft",
+      "description": "Analyzes infostealer samples by mapping the browser, credential store, wallet, and application paths they target, and the exfiltration channel used, from static strings and behavior. Activates for requests to analyze an infostealer, identify targeted credential stores, or map stealer collection and exfiltration behavior.",
+      "domain": "cybersecurity",
+      "subdomain": "malware-analysis",
+      "tags": [
+        "malware-analysis",
+        "infostealer",
+        "credential-theft",
+        "exfiltration",
+        "triage"
+      ],
+      "mitre_attack": [
+        "T1555.003",
+        "T1539",
+        "T1005"
+      ],
+      "path": "skills/analyzing-infostealer-credential-theft"
+    },
+    {
+      "name": "analyzing-java-jar-malware",
+      "description": "Analyzes Java/JAR malware (such as Adwind/jRAT-class cross-platform RATs) by inventorying the archive, reading the manifest entry point, detecting obfuscators and string encryption, and flagging suspicious runtime, reflection, and networking class usage. Activates for requests to analyze a malicious JAR, inspect Java malware, or identify a Java RAT.",
+      "domain": "cybersecurity",
+      "subdomain": "reverse-engineering",
+      "tags": [
+        "reverse-engineering",
+        "java",
+        "jar",
+        "rat",
+        "decompilation"
+      ],
+      "mitre_attack": [
+        "T1059",
+        "T1027",
+        "T1620"
+      ],
+      "path": "skills/analyzing-java-jar-malware"
+    },
+    {
+      "name": "analyzing-loaders-and-droppers",
+      "description": "Analyzes loader and dropper samples by identifying staging behavior — embedded or downloaded next-stage payloads, decode/decrypt routines, and the execution mechanism used to run the next stage. Activates for requests to analyze a loader or dropper, find a staged payload, or map multi-stage delivery behavior.",
+      "domain": "cybersecurity",
+      "subdomain": "malware-analysis",
+      "tags": [
+        "malware-analysis",
+        "loader",
+        "dropper",
+        "multi-stage",
+        "delivery"
+      ],
+      "mitre_attack": [
+        "T1105",
+        "T1140",
+        "T1574"
+      ],
+      "path": "skills/analyzing-loaders-and-droppers"
+    },
+    {
+      "name": "analyzing-mach-o-binaries-on-macos",
+      "description": "Statically analyzes macOS Mach-O malware: parsing the header and load commands, handling fat/universal binaries, reading linked dylibs and entitlements, and checking code signatures to infer capability and trust. Activates for requests to analyze a Mach-O binary, inspect macOS malware, or parse load commands and entitlements.",
+      "domain": "cybersecurity",
+      "subdomain": "malware-analysis",
+      "tags": [
+        "malware-analysis",
+        "mach-o",
+        "macos",
+        "static-analysis",
+        "code-signing"
+      ],
+      "mitre_attack": [
+        "T1027",
+        "T1059.002"
+      ],
+      "path": "skills/analyzing-mach-o-binaries-on-macos"
+    },
+    {
+      "name": "analyzing-malicious-iso-and-container-files",
+      "description": "Analyzes malicious ISO, IMG, VHD, and similar container files used to smuggle payloads past email and mark-of-the-web defenses by enumerating contents and flagging hidden executables, LNKs, and scripts. Activates for requests to analyze a malicious ISO/IMG, inspect a container delivery file, or find payloads hidden inside a disk image attachment.",
+      "domain": "cybersecurity",
+      "subdomain": "malware-analysis",
+      "tags": [
+        "malware-analysis",
+        "iso",
+        "container",
+        "delivery",
+        "mark-of-the-web"
+      ],
+      "mitre_attack": [
+        "T1553.005",
+        "T1204.002",
+        "T1027"
+      ],
+      "path": "skills/analyzing-malicious-iso-and-container-files"
+    },
+    {
+      "name": "analyzing-malicious-lnk-files",
+      "description": "Analyzes weaponized Windows shortcut (.lnk) files: parsing the shell link structure for the target command, arguments, icon, and working directory, and recovering hidden PowerShell/cmd payloads and embedded content used in phishing. Activates for requests to analyze a malicious LNK, parse a shortcut file, or extract a command from a .lnk.",
+      "domain": "cybersecurity",
+      "subdomain": "malware-analysis",
+      "tags": [
+        "malware-analysis",
+        "lnk",
+        "shortcut",
+        "document-malware",
+        "static-analysis"
+      ],
+      "mitre_attack": [
+        "T1204.002",
+        "T1059.001",
+        "T1059.003"
+      ],
+      "path": "skills/analyzing-malicious-lnk-files"
+    },
+    {
+      "name": "analyzing-malicious-office-macros",
+      "description": "Analyzes malicious Office documents by extracting and reviewing VBA macros and OLE/OOXML structure: auto-exec triggers, obfuscation, dropped payloads, and shell/PowerShell invocation. Activates for requests to analyze a malicious Word/Excel document, VBA macro, or maldoc.",
+      "domain": "cybersecurity",
+      "subdomain": "malware-analysis",
+      "tags": [
+        "malware",
+        "maldoc",
+        "vba",
+        "office",
+        "olevba",
+        "phishing"
+      ],
+      "mitre_attack": [
+        "T1566.001",
+        "T1059.005",
+        "T1204.002"
+      ],
+      "path": "skills/analyzing-malicious-office-macros"
+    },
+    {
+      "name": "analyzing-malicious-onenote-and-html-smuggling",
+      "description": "Analyzes two modern delivery techniques: malicious OneNote (.one) attachments with embedded payloads behind fake buttons, and HTML smuggling pages that reconstruct payloads in the browser from embedded blobs. Activates for requests to analyze a malicious OneNote file, detect HTML smuggling, or extract a smuggled/embedded payload.",
+      "domain": "cybersecurity",
+      "subdomain": "malware-analysis",
+      "tags": [
+        "malware-analysis",
+        "onenote",
+        "html-smuggling",
+        "document-malware",
+        "delivery"
+      ],
+      "mitre_attack": [
+        "T1027.006",
+        "T1204.002",
+        "T1566.001"
+      ],
+      "path": "skills/analyzing-malicious-onenote-and-html-smuggling"
+    },
+    {
+      "name": "analyzing-malicious-pdfs",
+      "description": "Analyzes malicious PDF documents: parsing the object structure for JavaScript, OpenAction/launch triggers, embedded files, and URIs, then extracting and decoding suspicious streams without opening the document in a reader. Activates for requests to analyze a malicious PDF, inspect PDF JavaScript, or extract embedded payloads from a PDF.",
+      "domain": "cybersecurity",
+      "subdomain": "malware-analysis",
+      "tags": [
+        "malware-analysis",
+        "pdf",
+        "document-malware",
+        "javascript",
+        "static-analysis"
+      ],
+      "mitre_attack": [
+        "T1204.002",
+        "T1059.007",
+        "T1027"
+      ],
+      "path": "skills/analyzing-malicious-pdfs"
+    },
+    {
+      "name": "analyzing-malicious-vbscript-and-wsf",
+      "description": "Analyzes malicious VBScript, WSF, and HTA scripts: parsing WSF/HTA containers, decoding VBScript.Encode (#@~^) and string obfuscation, and identifying WScript.Shell/ActiveX abuse to recover dropper behavior. Activates for requests to analyze VBScript, decode a WSF/HTA, or investigate a Windows Script Host dropper.",
+      "domain": "cybersecurity",
+      "subdomain": "malware-analysis",
+      "tags": [
+        "malware-analysis",
+        "vbscript",
+        "wsf",
+        "hta",
+        "document-malware",
+        "deobfuscation"
+      ],
+      "mitre_attack": [
+        "T1059.005",
+        "T1059.003",
+        "T1027"
+      ],
+      "path": "skills/analyzing-malicious-vbscript-and-wsf"
+    },
+    {
+      "name": "analyzing-malware-in-memory-with-volatility3",
+      "description": "Analyzes a memory image with Volatility 3 to find malware: rogue processes, injected code, suspicious network connections, loaded modules, and persistence, then extracts artifacts for further analysis. Activates for requests to do memory forensics, analyze a RAM dump, or hunt malware in memory with Volatility.",
+      "domain": "cybersecurity",
+      "subdomain": "malware-analysis",
+      "tags": [
+        "malware",
+        "memory-forensics",
+        "volatility3",
+        "process-injection",
+        "dfir",
+        "windows"
+      ],
+      "mitre_attack": [
+        "T1055",
+        "T1057",
+        "T1003",
+        "T1056"
+      ],
+      "path": "skills/analyzing-malware-in-memory-with-volatility3"
+    },
+    {
+      "name": "analyzing-pe-imports-and-exports",
+      "description": "Analyzes a PE file's import and export tables to infer capability: mapping imported APIs to behaviors (networking, crypto, injection, persistence), spotting dynamic-resolution stubs, and reading exports of malicious DLLs. Activates for requests to analyze PE imports, inspect the IAT/exports, or infer capability from API usage.",
+      "domain": "cybersecurity",
+      "subdomain": "malware-analysis",
+      "tags": [
+        "malware-analysis",
+        "pe",
+        "imports",
+        "exports",
+        "capability",
+        "static-analysis"
+      ],
+      "mitre_attack": [
+        "T1106",
+        "T1027"
+      ],
+      "path": "skills/analyzing-pe-imports-and-exports"
+    },
+    {
+      "name": "analyzing-position-independent-code",
+      "description": "Analyzes position-independent code and shellcode by identifying GetPC/PEB-walk techniques, API-hash resolution loops, and relocation-free addressing so the payload can be disassembled at the right base. Activates for requests to analyze position-independent code, identify PIC techniques, or understand how shellcode resolves APIs without imports.",
+      "domain": "cybersecurity",
+      "subdomain": "reverse-engineering",
+      "tags": [
+        "reverse-engineering",
+        "position-independent-code",
+        "shellcode",
+        "peb-walk",
+        "api-hashing"
+      ],
+      "mitre_attack": [
+        "T1027",
+        "T1027.007",
+        "T1620"
+      ],
+      "path": "skills/analyzing-position-independent-code"
+    },
+    {
+      "name": "analyzing-ransomware-encryption-behavior",
+      "description": "Analyzes how a ransomware sample encrypts files: identifying the crypto scheme (symmetric/asymmetric/hybrid), key handling, file targeting and extension/marker changes, shadow-copy deletion, and ransom-note artifacts. Activates for requests to analyze ransomware encryption, assess decryptability, or study ransomware behavior.",
+      "domain": "cybersecurity",
+      "subdomain": "malware-analysis",
+      "tags": [
+        "malware",
+        "ransomware",
+        "cryptography",
+        "encryption",
+        "file-marker",
+        "impact"
+      ],
+      "mitre_attack": [
+        "T1486",
+        "T1490",
+        "T1083",
+        "T1027"
+      ],
+      "path": "skills/analyzing-ransomware-encryption-behavior"
+    },
+    {
+      "name": "analyzing-rat-command-and-control",
+      "description": "Analyzes remote access trojan command-and-control by mapping the RAT command set, identifying the C2 transport and beacon parameters, and cataloging operator capabilities from static strings and config. Activates for requests to analyze RAT C2, map a trojan command handler, or identify remote-access capabilities and C2 transport.",
+      "domain": "cybersecurity",
+      "subdomain": "malware-analysis",
+      "tags": [
+        "malware-analysis",
+        "rat",
+        "command-and-control",
+        "c2",
+        "capability-mapping"
+      ],
+      "mitre_attack": [
+        "T1219",
+        "T1071",
+        "T1105"
+      ],
+      "path": "skills/analyzing-rat-command-and-control"
+    },
+    {
+      "name": "analyzing-rich-header-and-compiler-artifacts",
+      "description": "Analyzes the PE Rich header and related compiler artifacts to fingerprint the build toolchain, cluster related samples, and detect inconsistencies that suggest tampering. Activates for requests to analyze a Rich header, fingerprint the compiler/linker, or cluster samples by build toolchain.",
+      "domain": "cybersecurity",
+      "subdomain": "malware-analysis",
+      "tags": [
+        "malware-analysis",
+        "pe",
+        "rich-header",
+        "toolchain",
+        "clustering"
+      ],
+      "mitre_attack": [
+        "T1027",
+        "T1587.001",
+        "T1036"
+      ],
+      "path": "skills/analyzing-rich-header-and-compiler-artifacts"
+    },
+    {
+      "name": "analyzing-rust-malware-internals",
+      "description": "Analyzes Rust-compiled malware by detecting the Rust toolchain signature, demangling Rust v0/legacy symbol names, and identifying crate dependencies from embedded paths. Activates for requests to analyze Rust malware, demangle Rust symbols, or identify a Rust binary build and its crates.",
+      "domain": "cybersecurity",
+      "subdomain": "reverse-engineering",
+      "tags": [
+        "reverse-engineering",
+        "rust",
+        "symbol-demangling",
+        "crates",
+        "stripped-binaries"
+      ],
+      "mitre_attack": [
+        "T1027",
+        "T1587.001",
+        "T1059"
+      ],
+      "path": "skills/analyzing-rust-malware-internals"
+    },
+    {
+      "name": "analyzing-webshells",
+      "description": "Analyzes suspected webshells (PHP, ASPX/ASP, JSP) by detecting dynamic-execution sinks, input-to-sink data flow, and common encoder/obfuscation chains, then decoding obvious layers to reveal the command interface. Activates for requests to analyze a webshell, identify a PHP/ASPX/JSP backdoor, or deobfuscate server-side malicious scripts.",
+      "domain": "cybersecurity",
+      "subdomain": "malware-analysis",
+      "tags": [
+        "malware-analysis",
+        "webshell",
+        "php",
+        "aspx",
+        "server-side"
+      ],
+      "mitre_attack": [
+        "T1505.003",
+        "T1059",
+        "T1027"
+      ],
+      "path": "skills/analyzing-webshells"
+    },
+    {
+      "name": "analyzing-windows-driver-malware",
+      "description": "Analyzes malicious and vulnerable Windows kernel drivers (.sys) by parsing the PE for the native subsystem, identifying DriverEntry/IRP dispatch and IOCTL handlers, and flagging BYOVD and kernel-callback abuse. Activates for requests to analyze a Windows driver, examine a .sys sample, or assess a BYOVD/kernel driver threat.",
+      "domain": "cybersecurity",
+      "subdomain": "reverse-engineering",
+      "tags": [
+        "reverse-engineering",
+        "windows-driver",
+        "kernel",
+        "byovd",
+        "ioctl"
+      ],
+      "mitre_attack": [
+        "T1068",
+        "T1014",
+        "T1547.006"
+      ],
+      "path": "skills/analyzing-windows-driver-malware"
+    },
+    {
+      "name": "analyzing-wiper-malware",
+      "description": "Analyzes destructive wiper malware by identifying raw-disk and MBR/VBR overwrite primitives, boot-record tampering, mass-deletion and backup-destruction behavior, and distinguishing wipers from ransomware. Activates for requests to analyze a wiper, identify destructive disk-overwrite behavior, or tell a wiper apart from ransomware.",
+      "domain": "cybersecurity",
+      "subdomain": "malware-analysis",
+      "tags": [
+        "malware-analysis",
+        "wiper",
+        "destructive",
+        "mbr",
+        "impact"
+      ],
+      "mitre_attack": [
+        "T1485",
+        "T1561.002",
+        "T1561.001"
+      ],
+      "path": "skills/analyzing-wiper-malware"
+    },
+    {
+      "name": "automating-analysis-with-r2pipe",
+      "description": "Automates radare2/rizin analysis through r2pipe to script function enumeration, string and import extraction, and cross-reference queries across samples programmatically. Activates for requests to automate radare2 with r2pipe, script rizin analysis, or batch-extract functions and xrefs from binaries.",
+      "domain": "cybersecurity",
+      "subdomain": "reverse-engineering",
+      "tags": [
+        "reverse-engineering",
+        "radare2",
+        "rizin",
+        "r2pipe",
+        "automation"
+      ],
+      "mitre_attack": [
+        "T1027",
+        "T1059",
+        "T1587.001"
+      ],
+      "path": "skills/automating-analysis-with-r2pipe"
+    },
+    {
+      "name": "building-a-sample-management-workflow",
+      "description": "Establishes a disciplined malware sample repository: content-addressed storage by hash, encrypted/password-protected archiving, consistent metadata records, and chain-of-custody tracking so samples are reproducible and safe to handle. Activates for requests to organize a malware repository, manage samples, or track sample metadata and provenance.",
+      "domain": "cybersecurity",
+      "subdomain": "lab-foundations",
+      "tags": [
+        "lab-foundations",
+        "sample-management",
+        "storage",
+        "metadata",
+        "chain-of-custody"
+      ],
+      "mitre_attack": [
+        "T1587"
+      ],
+      "path": "skills/building-a-sample-management-workflow"
+    },
+    {
+      "name": "building-a-threat-hunt-hypothesis",
+      "description": "Frames a structured, testable threat-hunting hypothesis: grounding it in adversary behavior and available telemetry, defining the data sources and detection logic, and setting success criteria and outcomes. Activates for requests to start a threat hunt, write a hunt hypothesis, or plan a hypothesis-driven hunt.",
+      "domain": "cybersecurity",
+      "subdomain": "threat-hunting",
+      "tags": [
+        "threat-hunting",
+        "hypothesis",
+        "methodology",
+        "mitre-attack",
+        "planning"
+      ],
+      "mitre_attack": [
+        "T1059",
+        "T1071"
+      ],
+      "path": "skills/building-a-threat-hunt-hypothesis"
+    },
+    {
+      "name": "building-config-extractors",
+      "description": "Builds reusable malware configuration extractors by applying a declarative JSON spec (offsets, decode layers, field definitions) to a sample to produce structured, defanged config. Activates for requests to build a config extractor, write a reusable family config parser, or run a spec-driven configuration extraction.",
+      "domain": "cybersecurity",
+      "subdomain": "reverse-engineering",
+      "tags": [
+        "reverse-engineering",
+        "config-extraction",
+        "automation",
+        "tooling",
+        "c2"
+      ],
+      "mitre_attack": [
+        "T1140",
+        "T1027",
+        "T1071"
+      ],
+      "path": "skills/building-config-extractors"
+    },
+    {
+      "name": "building-zeek-analytics-for-hunting",
+      "description": "Builds Zeek-based network hunting analytics by writing scripts and analyzing Zeek logs (conn, dns, http, ssl, files) to surface long connections, rare JA3s, suspicious downloads, and beaconing. Activates for requests to build Zeek analytics, write a Zeek hunting script, or analyze Zeek logs for threats.",
+      "domain": "cybersecurity",
+      "subdomain": "threat-hunting",
+      "tags": [
+        "threat-hunting",
+        "zeek",
+        "network-analytics",
+        "ja3",
+        "beaconing"
+      ],
+      "mitre_attack": [
+        "T1071",
+        "T1095",
+        "T1571"
+      ],
+      "path": "skills/building-zeek-analytics-for-hunting"
+    },
+    {
+      "name": "bypassing-anti-vm-and-sandbox-checks",
+      "description": "Bypasses anti-VM and sandbox checks during analysis by locating the specific detection routines (artifact strings, timing, CPUID/hypervisor bit) and planning patches or environment hardening so the sample detonates. Activates for requests to bypass anti-VM checks, defeat sandbox detection, or make an evasive sample run for analysis.",
+      "domain": "cybersecurity",
+      "subdomain": "reverse-engineering",
+      "tags": [
+        "reverse-engineering",
+        "anti-vm",
+        "evasion",
+        "patching",
+        "sandbox"
+      ],
+      "mitre_attack": [
+        "T1497",
+        "T1497.001",
+        "T1497.003"
+      ],
+      "path": "skills/bypassing-anti-vm-and-sandbox-checks"
+    },
+    {
+      "name": "capturing-and-analyzing-malware-network-traffic",
+      "description": "Captures and analyzes malware network traffic from a detonation: extracting C2 endpoints, HTTP/DNS patterns, TLS metadata (JA3/SNI), and beaconing from a PCAP to build network IOCs and detection. Activates for requests to analyze malware PCAP, extract C2 from traffic, or study network behavior.",
+      "domain": "cybersecurity",
+      "subdomain": "malware-analysis",
+      "tags": [
+        "malware",
+        "network-analysis",
+        "pcap",
+        "c2",
+        "dns",
+        "beaconing"
+      ],
+      "mitre_attack": [
+        "T1071.001",
+        "T1071.004",
+        "T1571",
+        "T1095"
+      ],
+      "path": "skills/capturing-and-analyzing-malware-network-traffic"
+    },
+    {
+      "name": "collecting-volatile-evidence-from-a-suspect-host",
+      "description": "Collects volatile evidence from a potentially compromised host in correct order of volatility: memory, network state, running processes, logged-on users, and open handles, while preserving integrity and minimizing footprint. Activates for requests to collect volatile evidence, perform live response, or capture host state before shutdown.",
+      "domain": "cybersecurity",
+      "subdomain": "lab-foundations",
+      "tags": [
+        "lab-foundations",
+        "live-response",
+        "volatile-evidence",
+        "forensics",
+        "incident-response"
+      ],
+      "mitre_attack": [
+        "T1057",
+        "T1049"
+      ],
+      "path": "skills/collecting-volatile-evidence-from-a-suspect-host"
+    },
+    {
+      "name": "debugging-malware-with-x64dbg",
+      "description": "Uses x64dbg to dynamically debug Windows malware: setting strategic breakpoints on APIs, stepping through unpacking and decryption, dumping memory at the right moment, and manipulating execution to reach hidden code. Activates for requests to debug malware with x64dbg, set API breakpoints, or step through unpacking in a debugger.",
+      "domain": "cybersecurity",
+      "subdomain": "reverse-engineering",
+      "tags": [
+        "reverse-engineering",
+        "x64dbg",
+        "debugging",
+        "unpacking",
+        "breakpoints",
+        "windows"
+      ],
+      "mitre_attack": [
+        "T1027",
+        "T1140",
+        "T1497",
+        "T1055"
+      ],
+      "path": "skills/debugging-malware-with-x64dbg"
+    },
+    {
+      "name": "decrypting-embedded-configuration",
+      "description": "Decrypts statically embedded malware configuration blobs by trying common schemes (single-byte and multi-byte XOR, RC4, base64 layers) and scoring decoded output for config-like content. Activates for requests to decrypt an embedded config, recover hardcoded settings from a blob, or brute-force a configuration encryption scheme.",
+      "domain": "cybersecurity",
+      "subdomain": "reverse-engineering",
+      "tags": [
+        "reverse-engineering",
+        "config-extraction",
+        "decryption",
+        "xor",
+        "rc4"
+      ],
+      "mitre_attack": [
+        "T1140",
+        "T1027",
+        "T1071"
+      ],
+      "path": "skills/decrypting-embedded-configuration"
+    },
+    {
+      "name": "defanging-and-sharing-iocs",
+      "description": "Prepares indicators of compromise for safe sharing: defanging URLs, domains, IPs, and emails so they cannot be accidentally clicked or resolved, and formatting them into STIX/CSV/MISP-friendly output. Activates for requests to defang IOCs, sanitize indicators for a report, or export indicators for sharing.",
+      "domain": "cybersecurity",
+      "subdomain": "lab-foundations",
+      "tags": [
+        "lab-foundations",
+        "ioc",
+        "defanging",
+        "sharing",
+        "stix",
+        "reporting"
+      ],
+      "mitre_attack": [
+        "T1071"
+      ],
+      "path": "skills/defanging-and-sharing-iocs"
+    },
+    {
+      "name": "defeating-control-flow-flattening",
+      "description": "Defeats control-flow-flattening obfuscation by identifying the dispatcher/state- variable structure and reconstructing the original control flow so the logic becomes readable. Activates for requests to defeat control-flow flattening, deobfuscate an OLLVM-flattened function, or recover original control flow from a dispatcher loop.",
+      "domain": "cybersecurity",
+      "subdomain": "reverse-engineering",
+      "tags": [
+        "reverse-engineering",
+        "obfuscation",
+        "control-flow-flattening",
+        "ollvm",
+        "deobfuscation"
+      ],
+      "mitre_attack": [
+        "T1027",
+        "T1027.013",
+        "T1140"
+      ],
+      "path": "skills/defeating-control-flow-flattening"
+    },
+    {
+      "name": "defeating-string-and-api-obfuscation",
+      "description": "Recovers obfuscated strings and resolves dynamically loaded APIs in malware: reversing XOR/stack-string/encoding schemes and mapping API-hash lookups back to function names. Activates for requests to deobfuscate strings, decode stack strings, or resolve API hashing in a binary.",
+      "domain": "cybersecurity",
+      "subdomain": "reverse-engineering",
+      "tags": [
+        "reverse-engineering",
+        "obfuscation",
+        "strings",
+        "api-hashing",
+        "xor",
+        "deobfuscation"
+      ],
+      "mitre_attack": [
+        "T1027",
+        "T1140",
+        "T1106"
+      ],
+      "path": "skills/defeating-string-and-api-obfuscation"
+    },
+    {
+      "name": "deobfuscating-malicious-javascript",
+      "description": "Deobfuscates malicious JavaScript from droppers, web pages, and HTA/scriptlets: unrolling string-array and char-code encodings, resolving eval/Function chains, and statically recovering payloads and URLs without executing untrusted code. Activates for requests to deobfuscate JavaScript, decode obfuscated JS, or analyze a malicious script dropper.",
+      "domain": "cybersecurity",
+      "subdomain": "malware-analysis",
+      "tags": [
+        "malware-analysis",
+        "javascript",
+        "deobfuscation",
+        "document-malware",
+        "droppers"
+      ],
+      "mitre_attack": [
+        "T1059.007",
+        "T1027",
+        "T1140"
+      ],
+      "path": "skills/deobfuscating-malicious-javascript"
+    },
+    {
+      "name": "deobfuscating-malicious-powershell",
+      "description": "Deobfuscates malicious PowerShell by decoding -EncodedCommand, reversing string and format obfuscation, resolving base64/gzip/IEX layers, and recovering the final payload and IOCs. Activates for requests to deobfuscate, decode, or analyze obfuscated PowerShell commands or scripts.",
+      "domain": "cybersecurity",
+      "subdomain": "malware-analysis",
+      "tags": [
+        "malware",
+        "powershell",
+        "deobfuscation",
+        "base64",
+        "script-analysis",
+        "windows"
+      ],
+      "mitre_attack": [
+        "T1059.001",
+        "T1027",
+        "T1140"
+      ],
+      "path": "skills/deobfuscating-malicious-powershell"
+    },
+    {
+      "name": "detecting-process-injection-in-memory",
+      "description": "Detects process injection in a memory image by identifying private executable regions with no file backing, RWX protections, and modified entry points using Volatility 3 malfind-style analysis. Activates for requests to detect process injection, find injected code in memory, or triage suspicious executable regions in a memory image.",
+      "domain": "cybersecurity",
+      "subdomain": "malware-analysis",
+      "tags": [
+        "malware-analysis",
+        "memory-forensics",
+        "process-injection",
+        "volatility",
+        "malfind"
+      ],
+      "mitre_attack": [
+        "T1055",
+        "T1055.001",
+        "T1055.012"
+      ],
+      "path": "skills/detecting-process-injection-in-memory"
+    },
+    {
+      "name": "detecting-sandbox-evasion-behavior",
+      "description": "Detects sandbox and analysis evasion techniques in a sample by scanning static strings, imports, and API traces for VM artifact checks, timing/sleep stalls, anti-debug calls, and environment fingerprinting. Activates for requests to detect sandbox evasion, find anti-VM or anti-debug checks, or explain why a sample did not detonate.",
+      "domain": "cybersecurity",
+      "subdomain": "malware-analysis",
+      "tags": [
+        "malware-analysis",
+        "evasion",
+        "anti-vm",
+        "anti-debug",
+        "sandbox"
+      ],
+      "mitre_attack": [
+        "T1497",
+        "T1497.001",
+        "T1622"
+      ],
+      "path": "skills/detecting-sandbox-evasion-behavior"
+    },
+    {
+      "name": "diffing-malware-samples-to-find-changes",
+      "description": "Compares two related malware samples to surface what changed between variants using section-level hashing, import-set differences, and fuzzy similarity scoring. Activates for requests to diff two samples, compare malware variants, or measure similarity between two binaries for variant tracking.",
+      "domain": "cybersecurity",
+      "subdomain": "reverse-engineering",
+      "tags": [
+        "reverse-engineering",
+        "bindiff",
+        "variant-analysis",
+        "similarity",
+        "triage"
+      ],
+      "mitre_attack": [
+        "T1587.001",
+        "T1027",
+        "T1588.001"
+      ],
+      "path": "skills/diffing-malware-samples-to-find-changes"
+    },
+    {
+      "name": "dissecting-boot-and-kernel-rootkits",
+      "description": "Analyzes bootkit and rootkit samples by identifying boot-process tampering (MBR/VBR/ UEFI), kernel-mode components, and stealth hooking techniques from static indicators. Activates for requests to analyze a bootkit or rootkit, examine MBR/UEFI tampering, or identify kernel-mode stealth components.",
+      "domain": "cybersecurity",
+      "subdomain": "malware-analysis",
+      "tags": [
+        "malware-analysis",
+        "bootkit",
+        "rootkit",
+        "kernel",
+        "firmware"
+      ],
+      "mitre_attack": [
+        "T1542.003",
+        "T1014",
+        "T1547.006"
+      ],
+      "path": "skills/dissecting-boot-and-kernel-rootkits"
+    },
+    {
+      "name": "dumping-and-rebuilding-a-pe-from-memory",
+      "description": "Rebuilds a usable PE file from a memory dump by fixing the section alignment (virtual-to-raw), correcting the entry point, and preparing for import table reconstruction. Activates for requests to rebuild a dumped PE, fix a memory-dumped executable, or convert a process dump into an analyzable file.",
+      "domain": "cybersecurity",
+      "subdomain": "reverse-engineering",
+      "tags": [
+        "reverse-engineering",
+        "unpacking",
+        "pe-rebuild",
+        "memory",
+        "imports"
+      ],
+      "mitre_attack": [
+        "T1027.002",
+        "T1620",
+        "T1055.012"
+      ],
+      "path": "skills/dumping-and-rebuilding-a-pe-from-memory"
+    },
+    {
+      "name": "emulating-shellcode-with-unicorn",
+      "description": "Emulates position-independent shellcode in a controlled CPU emulator (Unicorn) to trace executed instructions, memory writes, and decoded second stages without running it on a real host. Activates for requests to emulate shellcode, trace a decoder stub, or recover a stage unpacked at runtime by shellcode.",
+      "domain": "cybersecurity",
+      "subdomain": "reverse-engineering",
+      "tags": [
+        "reverse-engineering",
+        "shellcode",
+        "emulation",
+        "unicorn",
+        "dynamic-analysis"
+      ],
+      "mitre_attack": [
+        "T1027",
+        "T1620",
+        "T1055"
+      ],
+      "path": "skills/emulating-shellcode-with-unicorn"
+    },
+    {
+      "name": "enriching-iocs-with-threat-intel-sources",
+      "description": "Enriches indicators with context from threat-intel sources: planning lookups against reputation, passive DNS, WHOIS, and sandbox/sample databases, scoring confidence, and avoiding operational-security mistakes that tip off adversaries. Activates for requests to enrich IOCs, add threat context, or plan indicator lookups safely.",
+      "domain": "cybersecurity",
+      "subdomain": "lab-foundations",
+      "tags": [
+        "lab-foundations",
+        "ioc",
+        "enrichment",
+        "threat-intel",
+        "opsec",
+        "reputation"
+      ],
+      "mitre_attack": [
+        "T1583",
+        "T1071"
+      ],
+      "path": "skills/enriching-iocs-with-threat-intel-sources"
+    },
+    {
+      "name": "establishing-telemetry-baselines",
+      "description": "Establishes behavioral baselines from historical telemetry (process, network, or logon events) so hunts can flag rare and first-seen activity instead of relying on static signatures. Activates for requests to build a telemetry baseline, find rare or first-seen activity, or compute frequency baselines for anomaly hunting.",
+      "domain": "cybersecurity",
+      "subdomain": "threat-hunting",
+      "tags": [
+        "threat-hunting",
+        "baselining",
+        "anomaly-detection",
+        "frequency-analysis",
+        "telemetry"
+      ],
+      "mitre_attack": [
+        "T1059",
+        "T1071",
+        "T1204"
+      ],
+      "path": "skills/establishing-telemetry-baselines"
+    },
+    {
+      "name": "extracting-and-classifying-strings",
+      "description": "Extracts ASCII and Unicode strings from a binary and classifies them into investigative categories: URLs, IPs, file paths, registry keys, mutexes, commands, and API names, prioritizing the analyst's attention. Activates for requests to extract strings, classify strings output, or pull human-readable artifacts from a sample.",
+      "domain": "cybersecurity",
+      "subdomain": "malware-analysis",
+      "tags": [
+        "malware-analysis",
+        "strings",
+        "static-analysis",
+        "triage",
+        "ioc"
+      ],
+      "mitre_attack": [
+        "T1027"
+      ],
+      "path": "skills/extracting-and-classifying-strings"
+    },
+    {
+      "name": "extracting-cobalt-strike-beacon-config",
+      "description": "Extracts and interprets a Cobalt Strike Beacon configuration: decoding the encoded config block, recovering C2 servers, malleable profile fields, sleep/jitter, watermark, and pipe names to build IOCs and attribution leads. Activates for requests to analyze a Cobalt Strike beacon, extract beacon config, or interpret malleable C2 settings.",
+      "domain": "cybersecurity",
+      "subdomain": "malware-analysis",
+      "tags": [
+        "malware",
+        "cobalt-strike",
+        "c2",
+        "beacon-config",
+        "malleable",
+        "threat-intel"
+      ],
+      "mitre_attack": [
+        "T1071.001",
+        "T1573",
+        "T1027",
+        "T1090"
+      ],
+      "path": "skills/extracting-cobalt-strike-beacon-config"
+    },
+    {
+      "name": "extracting-config-from-a-running-sample",
+      "description": "Extracts an embedded malware configuration (C2 hosts, ports, campaign IDs, keys) from a process memory dump by locating decrypted config structures and decoding common obfuscation layers. Activates for requests to extract malware config from a memory dump, recover C2 settings from a running sample, or decode an in-memory configuration block.",
+      "domain": "cybersecurity",
+      "subdomain": "malware-analysis",
+      "tags": [
+        "malware-analysis",
+        "config-extraction",
+        "memory",
+        "c2",
+        "dynamic-analysis"
+      ],
+      "mitre_attack": [
+        "T1027",
+        "T1140",
+        "T1071"
+      ],
+      "path": "skills/extracting-config-from-a-running-sample"
+    },
+    {
+      "name": "extracting-encryption-keys-from-binaries",
+      "description": "Locates candidate encryption keys in a binary by finding high-entropy fixed-size regions (16/24/32 bytes) near cryptographic constants or crypto API references, and surfacing printable key/passphrase strings. Activates for requests to extract encryption keys, find an AES key in a sample, or recover hardcoded crypto material.",
+      "domain": "cybersecurity",
+      "subdomain": "reverse-engineering",
+      "tags": [
+        "reverse-engineering",
+        "key-extraction",
+        "cryptography",
+        "entropy",
+        "config-extraction"
+      ],
+      "mitre_attack": [
+        "T1027",
+        "T1573",
+        "T1486"
+      ],
+      "path": "skills/extracting-encryption-keys-from-binaries"
+    },
+    {
+      "name": "extracting-iocs-from-analysis-output",
+      "description": "Extracts indicators of compromise from raw analysis artifacts: parsing strings dumps, sandbox reports, PCAP summaries, and logs for URLs, domains, IPs, hashes, mutexes, and file paths, then deduplicating and typing them. Activates for requests to extract IOCs from analysis output, pull indicators from a report, or harvest atomic indicators.",
+      "domain": "cybersecurity",
+      "subdomain": "lab-foundations",
+      "tags": [
+        "lab-foundations",
+        "ioc",
+        "extraction",
+        "parsing",
+        "automation"
+      ],
+      "mitre_attack": [
+        "T1071",
+        "T1583"
+      ],
+      "path": "skills/extracting-iocs-from-analysis-output"
+    },
+    {
+      "name": "generating-capability-reports-with-capa",
+      "description": "Uses capa to identify malware capabilities from a binary: running rule-based detection over disassembly, mapping matched capabilities to MITRE ATT&CK and MBC, and interpreting results to focus deeper analysis. Activates for requests to run capa, generate a capability report, or map a sample's behaviors to ATT&CK automatically.",
+      "domain": "cybersecurity",
+      "subdomain": "malware-analysis",
+      "tags": [
+        "malware-analysis",
+        "capa",
+        "capability",
+        "static-analysis",
+        "mitre-attack",
+        "mbc"
+      ],
+      "mitre_attack": [
+        "T1059",
+        "T1106",
+        "T1027"
+      ],
+      "path": "skills/generating-capability-reports-with-capa"
+    },
+    {
+      "name": "handling-malware-samples-safely",
+      "description": "Establishes safe practices for acquiring, storing, transferring, and disposing of malware samples: password-protected archives, neutralized extensions, hashing for identity, and chain-of-custody. Activates for requests about safely storing or sharing malware, sample handling hygiene, or defanging artifacts.",
+      "domain": "cybersecurity",
+      "subdomain": "lab-foundations",
+      "tags": [
+        "malware",
+        "sample-handling",
+        "hashing",
+        "defanging",
+        "chain-of-custody",
+        "hygiene"
+      ],
+      "mitre_attack": [
+        "T1027"
+      ],
+      "path": "skills/handling-malware-samples-safely"
+    },
+    {
+      "name": "hashing-and-fingerprinting-files",
+      "description": "Computes cryptographic and fuzzy fingerprints for malware samples: MD5/SHA-1/SHA-256 for exact identity, plus import hashing (imphash), section hashing, and fuzzy hashes (ssdeep, TLSH) to cluster related variants. Activates for requests to hash a sample, compute imphash, or fingerprint files for similarity clustering.",
+      "domain": "cybersecurity",
+      "subdomain": "lab-foundations",
+      "tags": [
+        "lab-foundations",
+        "hashing",
+        "fingerprinting",
+        "imphash",
+        "fuzzy-hashing",
+        "clustering"
+      ],
+      "mitre_attack": [
+        "T1027"
+      ],
+      "path": "skills/hashing-and-fingerprinting-files"
+    },
+    {
+      "name": "hunting-active-directory-attacks",
+      "description": "Hunts for Active Directory credential and replication attacks — DCSync, Golden/Silver Ticket, and DCShadow — by analyzing directory-service-access (4662), Kerberos TGS (4769), and logon (4624) events for replication abuse and forged-ticket anomalies. Activates for requests to hunt DCSync, detect golden/silver tickets, or find Active Directory replication abuse.",
+      "domain": "cybersecurity",
+      "subdomain": "threat-hunting",
+      "tags": [
+        "threat-hunting",
+        "active-directory",
+        "dcsync",
+        "golden-ticket",
+        "credential-access"
+      ],
+      "mitre_attack": [
+        "T1003.006",
+        "T1558.001",
+        "T1207"
+      ],
+      "path": "skills/hunting-active-directory-attacks"
+    },
+    {
+      "name": "hunting-anomalous-authentication-patterns",
+      "description": "Hunts for anomalous authentication such as password spraying, brute force, and impossible-travel logons by aggregating Windows logon success/failure events per account and source over time. Activates for requests to hunt anomalous logons, detect password spraying or brute force, or find suspicious authentication patterns.",
+      "domain": "cybersecurity",
+      "subdomain": "threat-hunting",
+      "tags": [
+        "threat-hunting",
+        "authentication",
+        "password-spraying",
+        "brute-force",
+        "credential-access"
+      ],
+      "mitre_attack": [
+        "T1110.003",
+        "T1110",
+        "T1078"
+      ],
+      "path": "skills/hunting-anomalous-authentication-patterns"
+    },
+    {
+      "name": "hunting-c2-beaconing-with-frequency-analysis",
+      "description": "Detects command-and-control beacons in network logs by analyzing connection timing: measuring inter-arrival intervals, accounting for jitter, and scoring regularity per source/destination pair to surface periodic callbacks. Activates for requests to hunt C2 beaconing, find periodic callbacks, or analyze connection-interval regularity.",
+      "domain": "cybersecurity",
+      "subdomain": "threat-hunting",
+      "tags": [
+        "threat-hunting",
+        "command-and-control",
+        "beaconing",
+        "network",
+        "frequency-analysis",
+        "jitter"
+      ],
+      "mitre_attack": [
+        "T1071.001",
+        "T1071",
+        "T1573"
+      ],
+      "path": "skills/hunting-c2-beaconing-with-frequency-analysis"
+    },
+    {
+      "name": "hunting-cobalt-strike-traffic",
+      "description": "Hunts for Cobalt Strike beacon traffic by detecting default stager URI checksum8 values, default Malleable C2 profile artifacts, and default ports/named pipes in HTTP and process telemetry. Activates for requests to hunt Cobalt Strike, detect beacon stager URIs, or find default Malleable C2 indicators.",
+      "domain": "cybersecurity",
+      "subdomain": "threat-hunting",
+      "tags": [
+        "threat-hunting",
+        "cobalt-strike",
+        "c2",
+        "beacon",
+        "network-detection"
+      ],
+      "mitre_attack": [
+        "T1071.001",
+        "T1573",
+        "T1090"
+      ],
+      "path": "skills/hunting-cobalt-strike-traffic"
+    },
+    {
+      "name": "hunting-credential-dumping-activity",
+      "description": "Hunts for credential dumping by detecting LSASS process access with suspicious access masks, known dumping tool signatures, and comsvcs.exe MiniDump abuse in Sysmon Event ID 10 and process-creation telemetry. Activates for requests to hunt credential dumping, detect LSASS access, or find Mimikatz/comsvcs MiniDump activity.",
+      "domain": "cybersecurity",
+      "subdomain": "threat-hunting",
+      "tags": [
+        "threat-hunting",
+        "credential-access",
+        "lsass",
+        "sysmon",
+        "mimikatz"
+      ],
+      "mitre_attack": [
+        "T1003.001",
+        "T1003",
+        "T1003.002"
+      ],
+      "path": "skills/hunting-credential-dumping-activity"
+    },
+    {
+      "name": "hunting-data-staging-and-archiving",
+      "description": "Hunts for pre-exfiltration data staging and archiving by detecting archive-tool execution (rar, 7z, zip, tar), large compressed files written to staging directories, and collection into a single location before transfer. Activates for requests to hunt data staging, detect pre-exfil archiving, or find collection and compression before exfiltration.",
+      "domain": "cybersecurity",
+      "subdomain": "threat-hunting",
+      "tags": [
+        "threat-hunting",
+        "data-staging",
+        "archiving",
+        "exfiltration",
+        "collection"
+      ],
+      "mitre_attack": [
+        "T1074.001",
+        "T1560.001",
+        "T1560"
+      ],
+      "path": "skills/hunting-data-staging-and-archiving"
+    },
+    {
+      "name": "hunting-dns-tunneling-and-exfiltration",
+      "description": "Detects DNS-based tunneling and data exfiltration in DNS logs: scoring high query volume to single domains, long/high-entropy subdomains, unusual record types, and encoded payload labels. Activates for requests to hunt DNS tunneling, detect DNS exfiltration, or analyze suspicious DNS query patterns.",
+      "domain": "cybersecurity",
+      "subdomain": "threat-hunting",
+      "tags": [
+        "threat-hunting",
+        "dns",
+        "tunneling",
+        "exfiltration",
+        "network",
+        "entropy"
+      ],
+      "mitre_attack": [
+        "T1071.004",
+        "T1048.003",
+        "T1572"
+      ],
+      "path": "skills/hunting-dns-tunneling-and-exfiltration"
+    },
+    {
+      "name": "hunting-domain-fronting-and-cdn-abuse",
+      "description": "Hunts for domain fronting and CDN abuse by detecting TLS SNI versus HTTP Host header mismatches and high-reputation CDN domains carrying anomalous traffic in network telemetry. Activates for requests to hunt domain fronting, detect SNI/Host mismatch, or find CDN abuse used to mask C2.",
+      "domain": "cybersecurity",
+      "subdomain": "threat-hunting",
+      "tags": [
+        "threat-hunting",
+        "domain-fronting",
+        "cdn",
+        "tls",
+        "c2"
+      ],
+      "mitre_attack": [
+        "T1090.004",
+        "T1071.001",
+        "T1573"
+      ],
+      "path": "skills/hunting-domain-fronting-and-cdn-abuse"
+    },
+    {
+      "name": "hunting-fileless-and-in-memory-threats",
+      "description": "Hunts for fileless and in-memory threats by correlating PowerShell script-block logs, encoded-command usage, in-memory loading patterns, and registry-resident payloads from Windows telemetry. Activates for requests to hunt fileless malware, detect in-memory execution, or find registry-resident and reflective-loading activity.",
+      "domain": "cybersecurity",
+      "subdomain": "threat-hunting",
+      "tags": [
+        "threat-hunting",
+        "fileless",
+        "in-memory",
+        "powershell",
+        "defense-evasion"
+      ],
+      "mitre_attack": [
+        "T1059.001",
+        "T1620",
+        "T1112"
+      ],
+      "path": "skills/hunting-fileless-and-in-memory-threats"
+    },
+    {
+      "name": "hunting-from-a-threat-intel-report",
+      "description": "Operationalizes a threat intelligence report into hunts: extracting IOCs and TTPs, mapping behaviors to ATT&CK and available telemetry, prioritizing durable behavioral indicators over volatile atomic ones, and producing concrete hunt queries. Activates for requests to hunt from a threat report, operationalize CTI, or turn an intel report into detections.",
+      "domain": "cybersecurity",
+      "subdomain": "threat-hunting",
+      "tags": [
+        "threat-hunting",
+        "threat-intelligence",
+        "ioc",
+        "mitre-attack",
+        "pyramid-of-pain"
+      ],
+      "mitre_attack": [
+        "T1059",
+        "T1071",
+        "T1547"
+      ],
+      "path": "skills/hunting-from-a-threat-intel-report"
+    },
+    {
+      "name": "hunting-kerberoasting-and-ticket-attacks",
+      "description": "Hunts for Kerberoasting and related ticket attacks by analyzing Kerberos service ticket request events (4769) for weak encryption types, abnormal request volume per account, and non-machine accounts requesting many SPNs. Activates for requests to hunt Kerberoasting, detect RC4 ticket requests, or find SPN-targeting credential attacks.",
+      "domain": "cybersecurity",
+      "subdomain": "threat-hunting",
+      "tags": [
+        "threat-hunting",
+        "kerberoasting",
+        "kerberos",
+        "credential-access",
+        "active-directory"
+      ],
+      "mitre_attack": [
+        "T1558.003",
+        "T1558",
+        "T1550.003"
+      ],
+      "path": "skills/hunting-kerberoasting-and-ticket-attacks"
+    },
+    {
+      "name": "hunting-lateral-movement-over-smb-and-wmi",
+      "description": "Hunts for lateral movement via remote service creation, admin share writes, and remote WMI process creation by correlating Windows logon, service install, and process-creation events. Activates for requests to hunt lateral movement, detect PsExec/WMIexec activity, or find remote execution over SMB and WMI.",
+      "domain": "cybersecurity",
+      "subdomain": "threat-hunting",
+      "tags": [
+        "threat-hunting",
+        "lateral-movement",
+        "smb",
+        "wmi",
+        "remote-execution"
+      ],
+      "mitre_attack": [
+        "T1021.002",
+        "T1021.003",
+        "T1570"
+      ],
+      "path": "skills/hunting-lateral-movement-over-smb-and-wmi"
+    },
+    {
+      "name": "hunting-lolbin-abuse-on-windows",
+      "description": "Hunts for living-off-the-land binary (LOLBin) abuse in Windows process-creation telemetry by flagging trusted system binaries used with download, execution-proxy, or encoded-command arguments. Activates for requests to hunt LOLBins, detect signed-binary proxy execution, or find suspicious certutil/mshta/regsvr32 usage.",
+      "domain": "cybersecurity",
+      "subdomain": "threat-hunting",
+      "tags": [
+        "threat-hunting",
+        "lolbin",
+        "process-creation",
+        "defense-evasion",
+        "sysmon"
+      ],
+      "mitre_attack": [
+        "T1218",
+        "T1105",
+        "T1059"
+      ],
+      "path": "skills/hunting-lolbin-abuse-on-windows"
+    },
+    {
+      "name": "hunting-persistence-mechanisms-on-windows",
+      "description": "Hunts for Windows persistence across autostart locations: Run keys, services, scheduled tasks, WMI event subscriptions, and startup folders, baselining them to surface anomalous or recently added entries. Activates for requests to hunt persistence, audit autostart extensibility points, or find malware autoruns on Windows.",
+      "domain": "cybersecurity",
+      "subdomain": "threat-hunting",
+      "tags": [
+        "threat-hunting",
+        "persistence",
+        "windows",
+        "autoruns",
+        "registry",
+        "scheduled-tasks"
+      ],
+      "mitre_attack": [
+        "T1547.001",
+        "T1543.003",
+        "T1053.005",
+        "T1546.003"
+      ],
+      "path": "skills/hunting-persistence-mechanisms-on-windows"
+    },
+    {
+      "name": "hunting-persistence-on-linux",
+      "description": "Hunts for Linux persistence by inspecting cron, systemd units, shell rc files, SSH authorized_keys, and common autostart locations for attacker-added entries. Activates for requests to hunt Linux persistence, audit cron/systemd for backdoors, or find unauthorized autostart and authorized_keys entries.",
+      "domain": "cybersecurity",
+      "subdomain": "threat-hunting",
+      "tags": [
+        "threat-hunting",
+        "linux",
+        "persistence",
+        "cron",
+        "systemd"
+      ],
+      "mitre_attack": [
+        "T1053.003",
+        "T1543.002",
+        "T1098.004"
+      ],
+      "path": "skills/hunting-persistence-on-linux"
+    },
+    {
+      "name": "hunting-process-injection-with-sysmon",
+      "description": "Hunts for process injection using Sysmon telemetry: correlating CreateRemoteThread (EID 8), suspicious cross-process access (EID 10), and RWX image-less memory to surface hollowing, shellcode injection, and APC abuse. Activates for requests to hunt process injection, analyze Sysmon EID 8/10, or detect code injection on Windows.",
+      "domain": "cybersecurity",
+      "subdomain": "threat-hunting",
+      "tags": [
+        "threat-hunting",
+        "process-injection",
+        "sysmon",
+        "windows",
+        "edr",
+        "detection"
+      ],
+      "mitre_attack": [
+        "T1055",
+        "T1055.001",
+        "T1055.012"
+      ],
+      "path": "skills/hunting-process-injection-with-sysmon"
+    },
+    {
+      "name": "hunting-ransomware-precursor-behavior",
+      "description": "Hunts for ransomware precursor behavior that precedes encryption — shadow-copy and backup deletion, recovery disabling, security-tool tampering, and mass file modification — so the attack can be stopped before payload detonation. Activates for requests to hunt ransomware precursors, detect shadow-copy deletion, or find pre-encryption recovery sabotage.",
+      "domain": "cybersecurity",
+      "subdomain": "threat-hunting",
+      "tags": [
+        "threat-hunting",
+        "ransomware",
+        "shadow-copy",
+        "impact",
+        "early-warning"
+      ],
+      "mitre_attack": [
+        "T1490",
+        "T1489",
+        "T1486"
+      ],
+      "path": "skills/hunting-ransomware-precursor-behavior"
+    },
+    {
+      "name": "hunting-scheduled-task-abuse",
+      "description": "Hunts for malicious scheduled task persistence by analyzing task registration events (4698) and schtasks process creation for suspicious actions, triggers, and hidden tasks. Activates for requests to hunt scheduled task abuse, detect malicious schtasks usage, or find persistence via the Task Scheduler.",
+      "domain": "cybersecurity",
+      "subdomain": "threat-hunting",
+      "tags": [
+        "threat-hunting",
+        "scheduled-task",
+        "persistence",
+        "schtasks",
+        "sysmon"
+      ],
+      "mitre_attack": [
+        "T1053.005",
+        "T1053",
+        "T1059"
+      ],
+      "path": "skills/hunting-scheduled-task-abuse"
+    },
+    {
+      "name": "hunting-suspicious-powershell-execution",
+      "description": "Hunts malicious PowerShell using script-block (EID 4104) and module logging: scoring encoded commands, download cradles, AMSI/logging bypass, and in-memory execution, then decoding payloads for triage. Activates for requests to hunt malicious PowerShell, analyze script-block logs, or detect encoded command abuse.",
+      "domain": "cybersecurity",
+      "subdomain": "threat-hunting",
+      "tags": [
+        "threat-hunting",
+        "powershell",
+        "windows",
+        "script-block-logging",
+        "lolbin",
+        "detection"
+      ],
+      "mitre_attack": [
+        "T1059.001",
+        "T1027",
+        "T1562.001"
+      ],
+      "path": "skills/hunting-suspicious-powershell-execution"
+    },
+    {
+      "name": "hunting-unusual-outbound-connections",
+      "description": "Hunts for unusual outbound network connections by flagging direct-to-IP traffic, uncommon ports, rare destinations, high data-egress ratios, and connections from unexpected processes in network telemetry. Activates for requests to hunt unusual outbound traffic, detect suspicious egress, or find anomalous external connections.",
+      "domain": "cybersecurity",
+      "subdomain": "threat-hunting",
+      "tags": [
+        "threat-hunting",
+        "network",
+        "egress",
+        "exfiltration",
+        "anomaly-detection"
+      ],
+      "mitre_attack": [
+        "T1071",
+        "T1048",
+        "T1571"
+      ],
+      "path": "skills/hunting-unusual-outbound-connections"
+    },
+    {
+      "name": "hunting-wmi-event-subscription-persistence",
+      "description": "Hunts for malicious WMI permanent event subscription persistence by correlating __EventFilter, CommandLineEventConsumer/ActiveScriptEventConsumer, and FilterToConsumerBinding records from Sysmon Event IDs 19/20/21 or WMI repository exports. Activates for requests to hunt WMI persistence, detect event consumer backdoors, or analyze WMI subscription telemetry.",
+      "domain": "cybersecurity",
+      "subdomain": "threat-hunting",
+      "tags": [
+        "threat-hunting",
+        "wmi",
+        "persistence",
+        "sysmon",
+        "event-subscription"
+      ],
+      "mitre_attack": [
+        "T1546.003",
+        "T1047",
+        "T1059"
+      ],
+      "path": "skills/hunting-wmi-event-subscription-persistence"
+    },
+    {
+      "name": "identifying-anti-debugging-techniques",
+      "description": "Identifies and bypasses anti-debugging and anti-analysis checks in malware: PEB flags, debugger-detection APIs, timing checks, and exception tricks, then neutralizes them to continue analysis. Activates for requests to identify anti-debugging, bypass anti-debug checks, or analyze evasion that blocks a debugger.",
+      "domain": "cybersecurity",
+      "subdomain": "reverse-engineering",
+      "tags": [
+        "reverse-engineering",
+        "anti-debugging",
+        "evasion",
+        "peb",
+        "debugging",
+        "windows"
+      ],
+      "mitre_attack": [
+        "T1622",
+        "T1497.001",
+        "T1027"
+      ],
+      "path": "skills/identifying-anti-debugging-techniques"
+    },
+    {
+      "name": "identifying-cryptographic-routines-in-binaries",
+      "description": "Identifies cryptographic algorithms embedded in a binary by scanning for well-known constants and tables (AES S-box, SHA-256/MD5 init constants, ChaCha sigma, CRC32 table, base64 alphabet). Activates for requests to identify crypto in a binary, find AES/SHA constants, or detect which encryption algorithm a sample uses.",
+      "domain": "cybersecurity",
+      "subdomain": "reverse-engineering",
+      "tags": [
+        "reverse-engineering",
+        "cryptography",
+        "constants",
+        "aes",
+        "detection"
+      ],
+      "mitre_attack": [
+        "T1027",
+        "T1486",
+        "T1573"
+      ],
+      "path": "skills/identifying-cryptographic-routines-in-binaries"
+    },
+    {
+      "name": "identifying-file-types-and-formats",
+      "description": "Identifies a sample's true file type independent of its extension: matching magic bytes and structural signatures, detecting container/archive formats, and flagging extension-content mismatches used to disguise malware. Activates for requests to identify a file type, check magic bytes, or detect a disguised/spoofed extension.",
+      "domain": "cybersecurity",
+      "subdomain": "lab-foundations",
+      "tags": [
+        "lab-foundations",
+        "file-type",
+        "magic-bytes",
+        "triage",
+        "masquerading"
+      ],
+      "mitre_attack": [
+        "T1036.008",
+        "T1036"
+      ],
+      "path": "skills/identifying-file-types-and-formats"
+    },
+    {
+      "name": "manually-unpacking-a-packed-binary",
+      "description": "Manually unpacks a runtime-packed Windows binary by finding the original entry point (OEP) through tail-jump and entropy analysis, then guiding a memory dump at OEP. Activates for requests to manually unpack a sample, find the OEP, or unpack a custom/unknown packer that generic tools cannot handle.",
+      "domain": "cybersecurity",
+      "subdomain": "reverse-engineering",
+      "tags": [
+        "reverse-engineering",
+        "unpacking",
+        "oep",
+        "packers",
+        "debugging"
+      ],
+      "mitre_attack": [
+        "T1027.002",
+        "T1140",
+        "T1620"
+      ],
+      "path": "skills/manually-unpacking-a-packed-binary"
+    },
+    {
+      "name": "mapping-hunts-to-mitre-attack",
+      "description": "Maps hunts and detections to MITRE ATT&CK for coverage analysis: tagging hypotheses with techniques, building a coverage matrix from completed hunts, and identifying high-risk gaps to prioritize next. Activates for requests to map hunts to ATT&CK, build a coverage heatmap, or find detection gaps by technique.",
+      "domain": "cybersecurity",
+      "subdomain": "threat-hunting",
+      "tags": [
+        "threat-hunting",
+        "mitre-attack",
+        "coverage",
+        "detection-gaps",
+        "navigator"
+      ],
+      "mitre_attack": [
+        "T1059",
+        "T1047",
+        "T1071"
+      ],
+      "path": "skills/mapping-hunts-to-mitre-attack"
+    },
+    {
+      "name": "measuring-section-entropy-to-detect-packing",
+      "description": "Detects packing and encryption by measuring Shannon entropy across a binary's sections and regions: flagging high-entropy executable sections, entropy spikes, and size/raw-vs-virtual anomalies that indicate compression or encryption. Activates for requests to measure entropy, detect packing, or assess whether a sample is compressed/encrypted.",
+      "domain": "cybersecurity",
+      "subdomain": "malware-analysis",
+      "tags": [
+        "malware-analysis",
+        "entropy",
+        "packing",
+        "static-analysis",
+        "pe"
+      ],
+      "mitre_attack": [
+        "T1027.002",
+        "T1027"
+      ],
+      "path": "skills/measuring-section-entropy-to-detect-packing"
+    },
+    {
+      "name": "monitoring-process-and-file-behavior",
+      "description": "Summarizes runtime behavior of a sample from Procmon-style operation logs — process and thread creation, file and registry writes, and network-related operations — to build a behavioral profile. Activates for requests to analyze Procmon output, summarize sample behavior, or profile process/file/registry activity from a sandbox run.",
+      "domain": "cybersecurity",
+      "subdomain": "malware-analysis",
+      "tags": [
+        "malware-analysis",
+        "dynamic-analysis",
+        "procmon",
+        "behavioral",
+        "sandbox"
+      ],
+      "mitre_attack": [
+        "T1106",
+        "T1112",
+        "T1059"
+      ],
+      "path": "skills/monitoring-process-and-file-behavior"
+    },
+    {
+      "name": "operationalizing-a-hunt-into-a-detection",
+      "description": "Converts a successful threat hunt into a durable detection by extracting the discriminating logic, defining data sources and thresholds, and emitting a Sigma rule plus a test and tuning plan. Activates for requests to operationalize a hunt, turn a finding into a detection rule, or productionize hunt logic as a Sigma detection.",
+      "domain": "cybersecurity",
+      "subdomain": "threat-hunting",
+      "tags": [
+        "threat-hunting",
+        "detection-engineering",
+        "sigma",
+        "operationalization",
+        "automation"
+      ],
+      "mitre_attack": [
+        "T1059",
+        "T1071",
+        "T1053"
+      ],
+      "path": "skills/operationalizing-a-hunt-into-a-detection"
+    },
+    {
+      "name": "performing-dynamic-analysis-in-a-sandbox",
+      "description": "Runs a sample in an instrumented sandbox to observe behavior: process tree, file and registry changes, network activity, and persistence, then summarizes the behavioral report into capabilities and IOCs. Activates for requests to detonate a sample, do dynamic or behavioral analysis, or interpret sandbox output.",
+      "domain": "cybersecurity",
+      "subdomain": "malware-analysis",
+      "tags": [
+        "malware",
+        "dynamic-analysis",
+        "sandbox",
+        "behavioral",
+        "procmon",
+        "detonation"
+      ],
+      "mitre_attack": [
+        "T1055",
+        "T1071",
+        "T1547",
+        "T1497"
+      ],
+      "path": "skills/performing-dynamic-analysis-in-a-sandbox"
+    },
+    {
+      "name": "performing-static-pe-analysis",
+      "description": "Extracts structure and indicators from a Windows PE file without executing it: headers, sections, imports/exports, resources, entropy, and embedded strings to infer capability and packing. Activates for requests to statically analyze a PE, EXE, or DLL, or inspect imports and headers.",
+      "domain": "cybersecurity",
+      "subdomain": "malware-analysis",
+      "tags": [
+        "malware",
+        "static-analysis",
+        "pe",
+        "imports",
+        "entropy",
+        "windows"
+      ],
+      "mitre_attack": [
+        "T1027",
+        "T1129",
+        "T1140"
+      ],
+      "path": "skills/performing-static-pe-analysis"
+    },
+    {
+      "name": "pivoting-on-iocs-across-data-sources",
+      "description": "Pivots on indicators of compromise across multiple data sources by correlating a seed set of IOCs against logs to find co-occurring indicators, hosts, and timeframes that expand the investigation. Activates for requests to pivot on IOCs, correlate indicators across data sources, or expand an investigation from a seed indicator set.",
+      "domain": "cybersecurity",
+      "subdomain": "threat-hunting",
+      "tags": [
+        "threat-hunting",
+        "ioc-pivoting",
+        "correlation",
+        "investigation",
+        "intel"
+      ],
+      "mitre_attack": [
+        "T1071",
+        "T1041",
+        "T1105"
+      ],
+      "path": "skills/pivoting-on-iocs-across-data-sources"
+    },
+    {
+      "name": "profiling-a-threat-actor-from-ttps",
+      "description": "Profiles a threat actor by aggregating observed ATT&CK techniques into a TTP profile and comparing it against known-group technique sets to estimate similarity and candidate attribution. Activates for requests to profile a threat actor, compare observed TTPs to known groups, or estimate attribution from technique overlap.",
+      "domain": "cybersecurity",
+      "subdomain": "threat-hunting",
+      "tags": [
+        "threat-hunting",
+        "threat-actor",
+        "attribution",
+        "ttp",
+        "mitre-attack"
+      ],
+      "mitre_attack": [
+        "T1059",
+        "T1071",
+        "T1583"
+      ],
+      "path": "skills/profiling-a-threat-actor-from-ttps"
+    },
+    {
+      "name": "recovering-injected-code-and-shellcode",
+      "description": "Carves injected PE images and position-independent shellcode from a memory dump or carved region, identifies the payload type, and prepares it for disassembly or emulation. Activates for requests to recover injected code, carve shellcode from memory, or reconstruct a dumped payload for analysis.",
+      "domain": "cybersecurity",
+      "subdomain": "malware-analysis",
+      "tags": [
+        "malware-analysis",
+        "shellcode",
+        "memory-forensics",
+        "carving",
+        "dynamic-analysis"
+      ],
+      "mitre_attack": [
+        "T1055",
+        "T1620",
+        "T1027"
+      ],
+      "path": "skills/recovering-injected-code-and-shellcode"
+    },
+    {
+      "name": "resolving-dynamic-api-hashing",
+      "description": "Resolves dynamically hashed Windows API names by brute-forcing observed hash constants against a wordlist of API/DLL names using common malware hashing algorithms (ROR13, djb2, FNV, CRC32). Activates for requests to resolve API hashes, identify hashed imports, or reverse an API hashing routine.",
+      "domain": "cybersecurity",
+      "subdomain": "reverse-engineering",
+      "tags": [
+        "reverse-engineering",
+        "api-hashing",
+        "obfuscation",
+        "imports",
+        "deobfuscation"
+      ],
+      "mitre_attack": [
+        "T1027.007",
+        "T1106",
+        "T1140"
+      ],
+      "path": "skills/resolving-dynamic-api-hashing"
+    },
+    {
+      "name": "reverse-engineering-arm-binaries",
+      "description": "Reverse engineers ARM/AArch64 malware by identifying the architecture and instruction set state (ARM/Thumb), parsing ELF/Mach-O ARM headers, and orienting analysis around the ARM calling convention. Activates for requests to reverse ARM binaries, analyze AArch64 malware, or handle ARM/Thumb instruction-set decoding.",
+      "domain": "cybersecurity",
+      "subdomain": "reverse-engineering",
+      "tags": [
+        "reverse-engineering",
+        "arm",
+        "aarch64",
+        "thumb",
+        "disassembly"
+      ],
+      "mitre_attack": [
+        "T1027",
+        "T1059",
+        "T1587.001"
+      ],
+      "path": "skills/reverse-engineering-arm-binaries"
+    },
+    {
+      "name": "reverse-engineering-binaries-with-binary-ninja",
+      "description": "Reverse engineers binaries with Binary Ninja using its analysis stack and Python API to enumerate functions, navigate IL levels (LLIL/MLIL/HLIL), and automate annotation and extraction. Activates for requests to reverse a binary with Binary Ninja, script the Binary Ninja API, or work with its intermediate languages.",
+      "domain": "cybersecurity",
+      "subdomain": "reverse-engineering",
+      "tags": [
+        "reverse-engineering",
+        "binary-ninja",
+        "il",
+        "automation",
+        "static-analysis"
+      ],
+      "mitre_attack": [
+        "T1027",
+        "T1059",
+        "T1587.001"
+      ],
+      "path": "skills/reverse-engineering-binaries-with-binary-ninja"
+    },
+    {
+      "name": "reverse-engineering-binaries-with-ghidra",
+      "description": "Uses Ghidra to disassemble and decompile a binary, navigate to key routines via imports and strings, annotate decompiled code, and run headless scripts to automate extraction of C2, crypto, and config. Activates for requests to reverse engineer with Ghidra, decompile a binary, or script Ghidra headless analysis.",
+      "domain": "cybersecurity",
+      "subdomain": "reverse-engineering",
+      "tags": [
+        "reverse-engineering",
+        "ghidra",
+        "decompilation",
+        "disassembly",
+        "headless",
+        "static-analysis"
+      ],
+      "mitre_attack": [
+        "T1027",
+        "T1140",
+        "T1480"
+      ],
+      "path": "skills/reverse-engineering-binaries-with-ghidra"
+    },
+    {
+      "name": "reverse-engineering-binaries-with-radare2-rizin",
+      "description": "Reverse engineers binaries using radare2/rizin interactively, covering analysis initialization, navigation, disassembly and graph views, patching, and the visual mode workflow. Activates for requests to reverse a binary with radare2 or rizin, learn r2 commands, or navigate and disassemble a sample in r2.",
+      "domain": "cybersecurity",
+      "subdomain": "reverse-engineering",
+      "tags": [
+        "reverse-engineering",
+        "radare2",
+        "rizin",
+        "disassembly",
+        "static-analysis"
+      ],
+      "mitre_attack": [
+        "T1027",
+        "T1059",
+        "T1587.001"
+      ],
+      "path": "skills/reverse-engineering-binaries-with-radare2-rizin"
+    },
+    {
+      "name": "reverse-engineering-custom-c2-protocols",
+      "description": "Reverses proprietary command-and-control protocols: locating send/recv routines, recovering the message framing and encryption/encoding, and reconstructing the command set to build a decoder or emulator. Activates for requests to reverse a custom C2 protocol, decode beacon traffic, or document a malware command structure.",
+      "domain": "cybersecurity",
+      "subdomain": "reverse-engineering",
+      "tags": [
+        "reverse-engineering",
+        "command-and-control",
+        "protocol",
+        "network",
+        "decryption",
+        "beacon"
+      ],
+      "mitre_attack": [
+        "T1071",
+        "T1095",
+        "T1573"
+      ],
+      "path": "skills/reverse-engineering-custom-c2-protocols"
+    },
+    {
+      "name": "reverse-engineering-nim-and-other-exotic-binaries",
+      "description": "Reverse engineers malware written in less-common compiled languages (Nim, Crystal, V, Zig, D) by detecting language-specific runtime signatures, name-mangling, and runtime strings to orient analysis. Activates for requests to reverse Nim malware, identify the source language of an exotic binary, or analyze Crystal/V/Zig/D compiled samples.",
+      "domain": "cybersecurity",
+      "subdomain": "reverse-engineering",
+      "tags": [
+        "reverse-engineering",
+        "nim",
+        "exotic-languages",
+        "language-detection",
+        "runtime"
+      ],
+      "mitre_attack": [
+        "T1027",
+        "T1587.001",
+        "T1059"
+      ],
+      "path": "skills/reverse-engineering-nim-and-other-exotic-binaries"
+    },
+    {
+      "name": "reverse-engineering-shellcode",
+      "description": "Analyzes position-independent shellcode: disassembling raw bytes at the right architecture, recognizing PEB-walk API resolution and egg hunters, and emulating execution to recover behavior and payloads. Activates for requests to analyze shellcode, disassemble raw position-independent code, or emulate a shellcode blob.",
+      "domain": "cybersecurity",
+      "subdomain": "reverse-engineering",
+      "tags": [
+        "reverse-engineering",
+        "shellcode",
+        "emulation",
+        "position-independent",
+        "peb-walk",
+        "disassembly"
+      ],
+      "mitre_attack": [
+        "T1055",
+        "T1106",
+        "T1027"
+      ],
+      "path": "skills/reverse-engineering-shellcode"
+    },
+    {
+      "name": "scanning-samples-with-yara",
+      "description": "Uses YARA to classify and triage samples at scale: applying rule sets, reading matches and string offsets, tuning for false positives, and organizing rules for malware family identification. Activates for requests to scan files with YARA, apply YARA rules, or classify samples by signature.",
+      "domain": "cybersecurity",
+      "subdomain": "malware-analysis",
+      "tags": [
+        "malware",
+        "yara",
+        "signatures",
+        "classification",
+        "triage",
+        "detection"
+      ],
+      "mitre_attack": [
+        "T1027",
+        "T1587.001"
+      ],
+      "path": "skills/scanning-samples-with-yara"
+    },
+    {
+      "name": "scoping-an-incident-from-a-single-indicator",
+      "description": "Expands one indicator into the full scope of an incident: pivoting across data sources to find related hosts, accounts, and infrastructure, building a timeline, and bounding what is and is not affected. Activates for requests to scope an incident, pivot from a single IOC, or determine the blast radius of a detection.",
+      "domain": "cybersecurity",
+      "subdomain": "lab-foundations",
+      "tags": [
+        "lab-foundations",
+        "incident-response",
+        "scoping",
+        "pivoting",
+        "timeline"
+      ],
+      "mitre_attack": [
+        "T1071",
+        "T1078"
+      ],
+      "path": "skills/scoping-an-incident-from-a-single-indicator"
+    },
+    {
+      "name": "scripting-ghidra-headless-analysis",
+      "description": "Automates batch reverse engineering by generating Ghidra analyzeHeadless commands and post-analysis script skeletons to import, auto-analyze, and export results for many samples without the GUI. Activates for requests to script Ghidra headless analysis, batch-analyze samples with Ghidra, or generate an analyzeHeadless command and post-script.",
+      "domain": "cybersecurity",
+      "subdomain": "reverse-engineering",
+      "tags": [
+        "reverse-engineering",
+        "ghidra",
+        "automation",
+        "headless",
+        "batch-analysis"
+      ],
+      "mitre_attack": [
+        "T1027",
+        "T1059",
+        "T1587.001"
+      ],
+      "path": "skills/scripting-ghidra-headless-analysis"
+    },
+    {
+      "name": "scripting-ida-with-idapython",
+      "description": "Automates IDA Pro analysis with IDAPython by generating scripts that enumerate functions, decode strings, rename by signature, and export analysis results, and by documenting the headless idat batch invocation. Activates for requests to script IDA Pro, write IDAPython automation, or run IDA in batch/headless mode.",
+      "domain": "cybersecurity",
+      "subdomain": "reverse-engineering",
+      "tags": [
+        "reverse-engineering",
+        "ida-pro",
+        "idapython",
+        "automation",
+        "batch-analysis"
+      ],
+      "mitre_attack": [
+        "T1027",
+        "T1059",
+        "T1620"
+      ],
+      "path": "skills/scripting-ida-with-idapython"
+    },
+    {
+      "name": "setting-up-an-isolated-malware-analysis-lab",
+      "description": "Builds a safe, isolated environment for detonating and analyzing malware using virtualization, host-only or simulated networking, and snapshotting. Activates for requests about creating a malware lab, sandbox VM, isolated analysis environment, or safe detonation setup.",
+      "domain": "cybersecurity",
+      "subdomain": "lab-foundations",
+      "tags": [
+        "malware",
+        "lab-setup",
+        "virtualization",
+        "isolation",
+        "inetsim",
+        "flare-vm"
+      ],
+      "mitre_attack": [
+        "T1564",
+        "T1497"
+      ],
+      "path": "skills/setting-up-an-isolated-malware-analysis-lab"
+    },
+    {
+      "name": "solving-malware-with-symbolic-execution",
+      "description": "Uses symbolic execution (angr) to solve constraint-based malware problems — finding inputs that reach a target branch, recovering keys/passwords from a check routine, and brute-forcing opaque predicates — by generating a ready-to-edit angr harness. Activates for requests to use symbolic execution, solve a malware unlock check with angr, or recover an input that reaches a code path.",
+      "domain": "cybersecurity",
+      "subdomain": "reverse-engineering",
+      "tags": [
+        "reverse-engineering",
+        "symbolic-execution",
+        "angr",
+        "deobfuscation",
+        "automation"
+      ],
+      "mitre_attack": [
+        "T1027",
+        "T1480",
+        "T1140"
+      ],
+      "path": "skills/solving-malware-with-symbolic-execution"
+    },
+    {
+      "name": "tracking-adversary-infrastructure",
+      "description": "Tracks adversary C2 and staging infrastructure by clustering indicators on shared attributes (TLS/JARM, certificate fields, favicon hashes, ASN, registration patterns) to find related hosts. Activates for requests to track adversary infrastructure, cluster C2 servers, or pivot on infrastructure attributes to find related hosts.",
+      "domain": "cybersecurity",
+      "subdomain": "threat-hunting",
+      "tags": [
+        "threat-hunting",
+        "infrastructure",
+        "c2-tracking",
+        "clustering",
+        "intel"
+      ],
+      "mitre_attack": [
+        "T1583",
+        "T1583.001",
+        "T1071"
+      ],
+      "path": "skills/tracking-adversary-infrastructure"
+    },
+    {
+      "name": "triaging-an-unknown-sample",
+      "description": "Performs fast first-pass triage of an unknown file to decide depth of analysis: file type identification, hashing, reputation lookup, packing/entropy check, and string review. Activates for requests to triage, classify, or do initial assessment of an unknown or suspicious file.",
+      "domain": "cybersecurity",
+      "subdomain": "lab-foundations",
+      "tags": [
+        "malware",
+        "triage",
+        "file-identification",
+        "entropy",
+        "strings",
+        "reputation"
+      ],
+      "mitre_attack": [
+        "T1027",
+        "T1140"
+      ],
+      "path": "skills/triaging-an-unknown-sample"
+    },
+    {
+      "name": "tuning-detections-to-reduce-false-positives",
+      "description": "Tunes noisy detections by analyzing historical alert data to quantify false-positive sources, recommend allow-list filters and threshold adjustments, and measure precision impact. Activates for requests to tune a detection, reduce false positives, or analyze alert noise and recommend filters.",
+      "domain": "cybersecurity",
+      "subdomain": "threat-hunting",
+      "tags": [
+        "threat-hunting",
+        "detection-engineering",
+        "false-positives",
+        "tuning",
+        "alert-triage"
+      ],
+      "mitre_attack": [
+        "T1059",
+        "T1071",
+        "T1053"
+      ],
+      "path": "skills/tuning-detections-to-reduce-false-positives"
+    },
+    {
+      "name": "unpacking-upx-and-common-packers",
+      "description": "Identifies and unpacks packed binaries: detecting packers from section names and entropy, automatically unpacking UPX, and manually unpacking custom packers by finding the OEP and dumping. Activates for requests to unpack a packed sample, detect a packer, or recover the original binary from UPX or a custom packer.",
+      "domain": "cybersecurity",
+      "subdomain": "reverse-engineering",
+      "tags": [
+        "reverse-engineering",
+        "unpacking",
+        "upx",
+        "packers",
+        "entropy",
+        "oep"
+      ],
+      "mitre_attack": [
+        "T1027.002",
+        "T1140",
+        "T1480"
+      ],
+      "path": "skills/unpacking-upx-and-common-packers"
+    },
+    {
+      "name": "validating-detections-with-atomic-tests",
+      "description": "Validates detection coverage by mapping Atomic Red Team tests to ATT&CK techniques, checking which of your detections cover each tested technique, and reporting coverage gaps. Activates for requests to validate detections with atomic tests, map Atomic Red Team to coverage, or find detection gaps against tested techniques.",
+      "domain": "cybersecurity",
+      "subdomain": "threat-hunting",
+      "tags": [
+        "threat-hunting",
+        "detection-engineering",
+        "atomic-red-team",
+        "coverage",
+        "validation"
+      ],
+      "mitre_attack": [
+        "T1059",
+        "T1003",
+        "T1053"
+      ],
+      "path": "skills/validating-detections-with-atomic-tests"
+    },
+    {
+      "name": "writing-a-malware-analysis-report",
+      "description": "Structures a clear, actionable malware analysis report covering summary, sample identity, capabilities, IOCs, ATT&CK mapping, and detection guidance for both technical and decision-making audiences. Activates for requests to write, structure, or review a malware analysis or reverse-engineering report.",
+      "domain": "cybersecurity",
+      "subdomain": "lab-foundations",
+      "tags": [
+        "malware",
+        "reporting",
+        "ioc",
+        "mitre-attack",
+        "documentation",
+        "detection"
+      ],
+      "mitre_attack": [
+        "T1587"
+      ],
+      "path": "skills/writing-a-malware-analysis-report"
+    },
+    {
+      "name": "writing-sigma-detection-rules",
+      "description": "Converts hunt findings into portable Sigma detection rules: choosing the right logsource, expressing robust selection/filter logic, setting level and ATT&CK tags, and validating before converting to a SIEM query. Activates for requests to write a Sigma rule, convert a hunt to a detection, or create portable SIEM detection logic.",
+      "domain": "cybersecurity",
+      "subdomain": "threat-hunting",
+      "tags": [
+        "threat-hunting",
+        "sigma",
+        "detection-engineering",
+        "siem",
+        "rules"
+      ],
+      "mitre_attack": [
+        "T1059.001",
+        "T1547.001"
+      ],
+      "path": "skills/writing-sigma-detection-rules"
+    },
+    {
+      "name": "writing-suricata-and-snort-rules",
+      "description": "Writes and validates Suricata/Snort IDS rules for network-based malware detection, covering rule anatomy, content/pcre matching, flow and threshold options, and common mistakes that cause false positives or no matches. Activates for requests to write a Suricata rule, create Snort signatures, or build network detection rules from IOCs or C2 patterns.",
+      "domain": "cybersecurity",
+      "subdomain": "threat-hunting",
+      "tags": [
+        "threat-hunting",
+        "suricata",
+        "snort",
+        "ids",
+        "network-detection"
+      ],
+      "mitre_attack": [
+        "T1071.001",
+        "T1095",
+        "T1571"
+      ],
+      "path": "skills/writing-suricata-and-snort-rules"
+    },
+    {
+      "name": "writing-yara-rules-from-reversed-code",
+      "description": "Turns reverse-engineering findings into durable YARA detections: selecting stable code constructs and constants over volatile strings, extracting opcode/byte patterns with wildcards, and validating rules for low false positives. Activates for requests to write a YARA rule from reversed code, create a detection signature, or convert RE findings into hunting rules.",
+      "domain": "cybersecurity",
+      "subdomain": "reverse-engineering",
+      "tags": [
+        "reverse-engineering",
+        "yara",
+        "detection",
+        "signatures",
+        "threat-hunting"
+      ],
+      "mitre_attack": [
+        "T1027.001",
+        "T1587.001"
+      ],
+      "path": "skills/writing-yara-rules-from-reversed-code"
+    }
+  ]
+}

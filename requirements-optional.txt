@@ -1,0 +1,27 @@
+# Optional dependencies for AnalystAIPack skill scripts.
+#
+# Every scripts/analyst.py runs on the Python standard library alone and degrades gracefully
+# when these are absent (reporting reduced capability rather than crashing). Install them to
+# unlock full functionality for the skills noted below.
+#
+#   pip install -r requirements-optional.txt
+#
+# Core runtime: Python 3.10+ standard library only — no required third-party packages.
+
+pefile               # PE import/export, entropy, hashing, diffing (analyzing-pe-imports-and-exports,
+                     #   performing-static-pe-analysis, measuring-section-entropy-to-detect-packing,
+                     #   hashing-and-fingerprinting-files, diffing-malware-samples-to-find-changes)
+capstone             # Disassembly for shellcode RE (reverse-engineering-shellcode)
+unicorn              # CPU emulation (emulating-shellcode-with-unicorn, reverse-engineering-shellcode)
+r2pipe               # radare2/rizin automation (automating-analysis-with-r2pipe); needs r2 or rizin installed
+pycdlib              # ISO directory listing (analyzing-malicious-iso-and-container-files)
+ssdeep               # Fuzzy hashing (hashing-and-fingerprinting-files, diffing-malware-samples-to-find-changes)
+python-tlsh          # TLSH fuzzy hashing (hashing-and-fingerprinting-files)
+yara-python          # YARA scanning (scanning-samples-with-yara)
+
+# Not pip-installable (commercial / external tooling), required only for their specific skill:
+#   binaryninja  -> reverse-engineering-binaries-with-binary-ninja (licensed Binary Ninja API)
+#   radare2 / rizin native binary -> automating-analysis-with-r2pipe,
+#                                    reverse-engineering-binaries-with-radare2-rizin
+#   Ghidra        -> scripting-ghidra-headless-analysis, reverse-engineering-binaries-with-ghidra
+#   Volatility 3  -> detecting-process-injection-in-memory, analyzing-malware-in-memory-with-volatility3

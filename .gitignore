@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+env/
+
+# Tooling / caches
+.ruff_cache/
+.mypy_cache/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Editor / OS
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+
+# Analyst working data — never commit live samples or local sandboxes
+# (AnalystAIPack ships no malware; keep captured specimens out of the tree)
+samples/
+*.sample
+*.malware
+*.dmp
+*.bin.enc
+quarantine/
