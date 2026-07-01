@@ -34,7 +34,7 @@ python scripts/analyst.py path/to/artifact --json
 ## Sources
 
 This skill was synthesized from the following primary sources. List the specific pages,
-docs, specs, or reports used — not generic homepages. (See PLAN.md §5.1.)
+docs, specs, or reports used — not generic homepages. (See CONTRIBUTING.md.)
 
 - [Source title — URL]
 - [Source title — URL]

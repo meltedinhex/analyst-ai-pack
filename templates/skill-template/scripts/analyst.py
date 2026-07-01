@@ -5,7 +5,7 @@ Replace this module with original code that automates the skill's workflow. Keep
 self-contained, dependency-light, and safe to run. Document every public function in
 ``references/api-reference.md``.
 
-Authoring rules (see PLAN.md §5.1):
+Authoring rules (see CONTRIBUTING.md):
 - Original code only. Do not lift or reword scripts from other skill repositories.
 - Lint with ``ruff`` before committing.
 - Fail safe: never execute a malware sample on the host; operate on files, logs, or

@@ -19,7 +19,7 @@ where **every skill ships a tested, runnable analysis script**, not just prose.
 
 > **Independent project.** Not affiliated with Anthropic, MITRE, or any vendor named here.
 > Built from scratch and synthesized from many primary sources; not copied from any other
-> skills repository. See [PLAN.md](PLAN.md) §5 for the sourcing and originality policy.
+> skills repository. See [CONTRIBUTING.md](CONTRIBUTING.md) for the sourcing and originality policy.
 
 ## What makes it different
 
@@ -50,8 +50,7 @@ Three pillars plus a shared foundation:
 | `reverse-engineering` | Disassembly/decompilation, unpacking, deobfuscation, anti-analysis defeat, language-specific RE |
 | `threat-hunting` | Hypothesis-driven hunts, endpoint/network/identity telemetry, detection engineering |
 
-See [taxonomy.md](taxonomy.md) for naming rules and framework mappings, and
-[PLAN.md](PLAN.md) for the original 108-skill backlog and milestones. Browse every skill in
+See [taxonomy.md](taxonomy.md) for naming rules and framework mappings. Browse every skill in
 [CATALOG.md](CATALOG.md), and see ATT&CK coverage in
 [mappings/](mappings/README.md).
 

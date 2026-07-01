@@ -2,7 +2,7 @@
 """Lint AnalystAIPack SKILL.md files against the repository schema.
 
 Checks frontmatter fields, kebab-case naming, framework-ID formats, and the required
-body-section order described in PLAN.md.
+body-section order described in CONTRIBUTING.md.
 
 Usage:
     python tools/lint-skills.py skills/my-skill

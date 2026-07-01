@@ -7,7 +7,7 @@ content genuinely its own.
 ## Originality rules (non-negotiable)
 
 AnalystAIPack reuses an **open file format** (agentskills.io) on purpose, but its **content is
-original**. To keep that true (PLAN.md §5.1):
+original**. To keep that true:
 
 1. **Author from primary sources only.** Do not open, read, or paraphrase any skill file
    from another skills repository while writing an AnalystAIPack skill. Work from tool docs,

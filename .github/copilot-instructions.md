@@ -47,4 +47,4 @@ python tools/build-index.py && python tools/build-catalog.py && python tools/bui
 python tools/smoke-test.py
 ```
 
-See `AGENTS.md` (full operating guide), `CONTRIBUTING.md`, and `PLAN.md` §5 (originality rules).
+See `AGENTS.md` (full operating guide) and `CONTRIBUTING.md` (originality rules).

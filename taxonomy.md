@@ -25,7 +25,7 @@ one subdomain, declared in its `SKILL.md` frontmatter.
 - **Be specific and content-accurate.** The name should describe what the skill actually
   does, not a generic category.
 - **Avoid name collisions with other public skill libraries.** Where an equivalent skill
-  exists elsewhere, choose a distinct, accurate name (see PLAN.md §5.1).
+  exists elsewhere, choose a distinct, accurate name (see CONTRIBUTING.md).
 
 ### Preferred leading verbs
 

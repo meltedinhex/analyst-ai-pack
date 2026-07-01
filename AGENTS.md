@@ -70,5 +70,4 @@ python tools/build-navigator-layer.py      # regenerate the ATT&CK layer
 python tools/smoke-test.py                 # run every analyst.py (--help + fixtures)
 ```
 
-Authoring rules (originality, sourcing, safety) are in [`CONTRIBUTING.md`](CONTRIBUTING.md) and
-[`PLAN.md`](PLAN.md) §5.
+Authoring rules (originality, sourcing, safety) are in [`CONTRIBUTING.md`](CONTRIBUTING.md).
