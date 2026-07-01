@@ -112,7 +112,7 @@ threat hunting better than compliance checklists.
 ## Quick start
 
 ```bash
-git clone <your-fork-url> analyst-ai-pack
+git clone https://github.com/meltedinhex/analyst-ai-pack.git
 cd analyst-ai-pack
 
 # Validate skills and (re)build the catalog

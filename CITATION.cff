@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "If you use AnalystAIPack, please cite it as below."
+title: AnalystAIPack
+abstract: >-
+  An open agent-skills library for malware analysis, reverse engineering, and
+  threat hunting. 118 curated skills, each shipping a tested, runnable analysis
+  script, mapped to MITRE ATT&CK, D3FEND, and CAR.
+type: software
+authors:
+  - family-names: Sadique
+    given-names: Mohd
+    alias: meltedinhex
+repository-code: "https://github.com/meltedinhex/analyst-ai-pack"
+url: "https://github.com/meltedinhex/analyst-ai-pack"
+license: Apache-2.0
+version: "1.0.0"
+date-released: "2026-07-01"
+keywords:
+  - malware-analysis
+  - reverse-engineering
+  - threat-hunting
+  - agent-skills
+  - mitre-attack
+  - dfir
+  - detection-engineering
