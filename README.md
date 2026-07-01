@@ -1,5 +1,10 @@
 # AnalystAIPack
 
+[![CI](https://github.com/meltedinhex/analyst-ai-pack/actions/workflows/ci.yml/badge.svg)](https://github.com/meltedinhex/analyst-ai-pack/actions/workflows/ci.yml)
+[![License: Apache-2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
+[![Skills](https://img.shields.io/badge/skills-118-green.svg)](CATALOG.md)
+[![Format: agentskills.io](https://img.shields.io/badge/format-agentskills.io-8A2BE2.svg)](https://agentskills.io)
+
 **An open agent-skills library for malware analysis, reverse engineering, and threat hunting.**
 
 AnalystAIPack gives an AI agent the working knowledge of a malware analyst and threat hunter:
