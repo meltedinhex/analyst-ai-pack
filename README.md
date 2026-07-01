@@ -20,6 +20,9 @@ where **every skill ships a tested, runnable analysis script**, not just prose.
 > **Independent project.** Not affiliated with Anthropic, MITRE, or any vendor named here.
 > Built from scratch and synthesized from many primary sources; not copied from any other
 > skills repository. See [CONTRIBUTING.md](CONTRIBUTING.md) for the sourcing and originality policy.
+>
+> **Personal work.** A personal, independent project maintained in a personal capacity. It is
+> not affiliated with, endorsed by, or representative of the maintainer's employer.
 
 ## What makes it different
 
