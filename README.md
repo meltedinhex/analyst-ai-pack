@@ -105,7 +105,7 @@ agents.
 ```
 skills/<skill-name>/
 ├── SKILL.md                  # frontmatter + procedure (When to Use, Workflow, ...)
-├── scripts/analyst.py          # runnable tooling
+├── scripts/analyst.py        # runnable tooling
 ├── references/api-reference.md
 └── LICENSE
 ```
@@ -190,3 +190,8 @@ AnalystAIPack ships **no live malware samples**. See [SECURITY.md](SECURITY.md).
 
 Apache-2.0 — see [LICENSE](LICENSE). MITRE ATT&CK, D3FEND, and CAR are © MITRE and used
 under their respective terms.
+
+---
+
+Built and maintained by [meltedinhex](https://meltedinhex.com/) — malware analysis, reverse
+engineering, and threat-hunting notes.
