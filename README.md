@@ -13,6 +13,8 @@ hunt C2 beaconing in network logs, and how to turn findings into YARA and Sigma.
 **focused, depth-first** library — 118 curated skills across four tightly-scoped subdomains,
 where **every skill ships a tested, runnable analysis script**, not just prose.
 
+![AnalystAIPack in action — an agent chaining skills from sample to detection](assets/AnalystAIPackDemo.gif)
+
 > The name says what it is: a **pack** of ready-to-load **AI** agent skills for the security
 > **analyst** — covering the full workflow to **hunt**, **reverse**, and **analyze** malicious
 > code.
@@ -30,7 +32,7 @@ where **every skill ships a tested, runnable analysis script**, not just prose.
   threat hunting, and shared lab foundations) instead of a sprawling catalog — every skill is
   curated for the analyst's real workflow.
 - **Every skill is runnable.** All 118 skills ship a tested `scripts/analyst.py` (standard
-  library only, optional deps degrade gracefully) plus a repo-wide smoke-test harness and CI
+  library only, optional deps degrade gracefully) plus a repo-addwide smoke-test harness and CI
   `--check` gates — so the tooling actually works, not just reads well.
 - **Safe by construction.** Scripts perform static, read-only analysis and **never execute the
   sample**; IOCs are defanged in output; sample-handling skills carry an explicit

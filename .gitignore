@@ -32,3 +32,6 @@ samples/
 *.dmp
 *.bin.enc
 quarantine/
+
+# Local-only demo tooling, fixtures, and recordings (kept out of the tree)
+demo/
