@@ -91,6 +91,7 @@ python tools/build-index.py --check                  # CI: fail if index is stal
 python tools/build-catalog.py                        # regenerate CATALOG.md
 python tools/build-navigator-layer.py                # regenerate the ATT&CK layer
 python tools/smoke-test.py                            # run every analyst.py (--help + fixtures)
+python -m unittest discover -s tools -p 'test_*.py'    # CLI regression tests
 ruff check skills/<skill-name>/scripts                # lint tooling
 ```
 
