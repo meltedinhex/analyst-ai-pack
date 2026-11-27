@@ -115,6 +115,12 @@ def cmd_show(args) -> int:
         print("\nScript commands:")
         proc = subprocess.run([PY, script, "--help"], capture_output=True, text=True)
         print("  " + "\n  ".join(proc.stdout.strip().splitlines()))
+        if proc.returncode:
+            print(f"Failed to show script commands for {args.skill} "
+                  f"(exit code {proc.returncode}).", file=sys.stderr)
+            if proc.stderr:
+                print(proc.stderr, end="", file=sys.stderr)
+            return proc.returncode
     return 0
 
 

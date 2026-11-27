@@ -170,6 +170,9 @@ python tools/analyst-pack.py lint                              # lint every skil
 python tools/analyst-pack.py build                             # rebuild index/catalog/layer
 ```
 
+The `show` command reports script-help failures on stderr and returns the script's
+nonzero exit status, so a broken skill cannot silently appear to load successfully.
+
 ## Creating a skill
 
 ```bash
